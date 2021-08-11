@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/EDD_SmartClass_201800524.dir/Persona.cpp.obj"
+  "CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj"
+  "EDD_SmartClass_201800524.exe"
+  "EDD_SmartClass_201800524.exe.manifest"
+  "EDD_SmartClass_201800524.pdb"
+  "libEDD_SmartClass_201800524.dll.a"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/EDD_SmartClass_201800524.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
