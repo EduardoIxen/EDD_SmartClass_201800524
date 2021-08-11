@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Persona.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/Persona.cpp.obj"
+  "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Estudiante.cpp.obj"
+  "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.obj"
   "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/main.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

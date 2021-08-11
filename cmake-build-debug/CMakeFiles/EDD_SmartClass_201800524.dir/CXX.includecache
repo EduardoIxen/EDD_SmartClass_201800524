@@ -6,13 +6,23 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Persona.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
 iostream
 -
 
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/main.cpp
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.cpp
+ReadCsv.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.h
 iostream
--
-Persona.h
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Persona.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/iostream
+fstream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/fstream
+sstream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/sstream
+regex
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/regex
+../Objetos/Estudiante.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
 
