@@ -10,12 +10,14 @@
 #include "sstream"
 #include "regex"
 #include "../Objetos/Estudiante.h"
+#include "../Estructuras/ListaDobleEstud.h"
 
 using namespace std;
 
 class ReadCsv {
 private:
 public:
+    ListaDobleEstud* listaDobleEst = new ListaDobleEstud();
     void readEstudiantes(string);
     void validarDatos(string, string, string);
 };

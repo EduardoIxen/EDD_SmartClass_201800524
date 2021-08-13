@@ -104,11 +104,39 @@ CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\ReadFile\ReadCsv.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\ReadFile\ReadCsv.cpp.s
 
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj: ../Estructuras/NodoEstudiante.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\NodoEstudiante.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\NodoEstudiante.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\NodoEstudiante.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\NodoEstudiante.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\NodoEstudiante.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\NodoEstudiante.cpp.s
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj: ../Estructuras/ListaDobleEstud.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\ListaDobleEstud.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\ListaDobleEstud.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\ListaDobleEstud.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\ListaDobleEstud.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\ListaDobleEstud.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\ListaDobleEstud.cpp.s
+
 # Object files for target EDD_SmartClass_201800524
 EDD_SmartClass_201800524_OBJECTS = \
 "CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj" \
 "CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Estudiante.cpp.obj" \
-"CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.obj"
+"CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj"
 
 # External object files for target EDD_SmartClass_201800524
 EDD_SmartClass_201800524_EXTERNAL_OBJECTS =
@@ -116,11 +144,13 @@ EDD_SmartClass_201800524_EXTERNAL_OBJECTS =
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Estudiante.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/build.make
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/linklibs.rsp
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/objects1.rsp
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable EDD_SmartClass_201800524.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable EDD_SmartClass_201800524.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EDD_SmartClass_201800524.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

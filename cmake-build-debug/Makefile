@@ -128,6 +128,54 @@ EDD_SmartClass_201800524/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/build
 .PHONY : EDD_SmartClass_201800524/fast
 
+Estructuras/ListaDobleEstud.obj: Estructuras/ListaDobleEstud.cpp.obj
+.PHONY : Estructuras/ListaDobleEstud.obj
+
+# target to build an object file
+Estructuras/ListaDobleEstud.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj
+.PHONY : Estructuras/ListaDobleEstud.cpp.obj
+
+Estructuras/ListaDobleEstud.i: Estructuras/ListaDobleEstud.cpp.i
+.PHONY : Estructuras/ListaDobleEstud.i
+
+# target to preprocess a source file
+Estructuras/ListaDobleEstud.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.i
+.PHONY : Estructuras/ListaDobleEstud.cpp.i
+
+Estructuras/ListaDobleEstud.s: Estructuras/ListaDobleEstud.cpp.s
+.PHONY : Estructuras/ListaDobleEstud.s
+
+# target to generate assembly for a file
+Estructuras/ListaDobleEstud.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.s
+.PHONY : Estructuras/ListaDobleEstud.cpp.s
+
+Estructuras/NodoEstudiante.obj: Estructuras/NodoEstudiante.cpp.obj
+.PHONY : Estructuras/NodoEstudiante.obj
+
+# target to build an object file
+Estructuras/NodoEstudiante.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj
+.PHONY : Estructuras/NodoEstudiante.cpp.obj
+
+Estructuras/NodoEstudiante.i: Estructuras/NodoEstudiante.cpp.i
+.PHONY : Estructuras/NodoEstudiante.i
+
+# target to preprocess a source file
+Estructuras/NodoEstudiante.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.i
+.PHONY : Estructuras/NodoEstudiante.cpp.i
+
+Estructuras/NodoEstudiante.s: Estructuras/NodoEstudiante.cpp.s
+.PHONY : Estructuras/NodoEstudiante.s
+
+# target to generate assembly for a file
+Estructuras/NodoEstudiante.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.s
+.PHONY : Estructuras/NodoEstudiante.cpp.s
+
 Objetos/Estudiante.obj: Objetos/Estudiante.cpp.obj
 .PHONY : Objetos/Estudiante.obj
 
@@ -209,6 +257,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... EDD_SmartClass_201800524
+	@echo ... Estructuras/ListaDobleEstud.obj
+	@echo ... Estructuras/ListaDobleEstud.i
+	@echo ... Estructuras/ListaDobleEstud.s
+	@echo ... Estructuras/NodoEstudiante.obj
+	@echo ... Estructuras/NodoEstudiante.i
+	@echo ... Estructuras/NodoEstudiante.s
 	@echo ... Objetos/Estudiante.obj
 	@echo ... Objetos/Estudiante.i
 	@echo ... Objetos/Estudiante.s

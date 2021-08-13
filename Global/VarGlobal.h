@@ -1,0 +1,14 @@
+//
+// Created by Eduardo-Ixen on 13/08/2021.
+//
+
+#ifndef EDD_SMARTCLASS_201800524_VARGLOBAL_H
+#define EDD_SMARTCLASS_201800524_VARGLOBAL_H
+
+
+class VarGlobal {
+
+};
+
+
+#endif //EDD_SMARTCLASS_201800524_VARGLOBAL_H

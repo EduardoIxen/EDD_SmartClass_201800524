@@ -31,16 +31,13 @@ void ReadCsv::readEstudiantes(string _path) {
         getline(stream, edad, delimitador);
         getline(stream, correo, delimitador);
 
-        cout << carnet << endl;
-        cout << "llego aquiiiii" << endl;
         validarDatos(carnet, dpi, correo);
 
         auto* nuevoEstudiante = new Estudiante(stoi(carnet), stoll(dpi, nullptr, 10), nombre, carrera, correo, passw, stoi(creditos), stoi(edad));
-        //cout << nuevoEstudiante->verEstudiante() << endl;
-        nuevoEstudiante->~Estudiante();
-        cout << "-----------------------------------------" << endl;
+        listaDobleEst->insertar(*nuevoEstudiante);
     }
     archivo.close();
+
 }
 
 void ReadCsv::validarDatos(string carnet, string dpi, string correo) {

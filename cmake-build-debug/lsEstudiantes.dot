@@ -1,0 +1,27 @@
+digraph G{
+ rankdir = LR; 
+node [shape=box]; 
+compound=true; 
+"0x10f7258"[label="Emilia Miramontes"];
+"0x10f73f0"[label="Juan Curiel"];
+"0x10f75a8"[label="Eloisa Rincón"];
+"0x10fb0b0"[label="Bernardo Hinojosa"];
+"0x10fb430"[label="Manuel Manzanares"];
+"0x10fb548"[label="Julia Corona"];
+"0x10fb660"[label="Berta Carrasco"];
+"0x10fb778"[label="Lola Delapaz"];
+"0x10fc108"[label="Sonia Arteaga"];
+"0x10fc288"[label="Benjamín Asencio"];
+"0x10f7258" -> "0x10f73f0" [dir="both"];
+"0x10f73f0" -> "0x10f75a8" [dir="both"];
+"0x10f75a8" -> "0x10fb0b0" [dir="both"];
+"0x10fb0b0" -> "0x10fb430" [dir="both"];
+"0x10fb430" -> "0x10fb548" [dir="both"];
+"0x10fb548" -> "0x10fb660" [dir="both"];
+"0x10fb660" -> "0x10fb778" [dir="both"];
+"0x10fb778" -> "0x10fc108" [dir="both"];
+"0x10fc108" -> "0x10fc288" [dir="both"];
+"0x10fc288" -> "0x10f7258"[dir="both"];
+
+}
+

@@ -82,6 +82,21 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.cpp">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.cpp">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Global/VarGlobal.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.cpp">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>

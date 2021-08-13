@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj"
+  "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Estudiante.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj"
