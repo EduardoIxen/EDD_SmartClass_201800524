@@ -4,10 +4,11 @@
 
 #include "ReadCsv.h"
 
-void ReadCsv::readEstudiantes(string _path) {
+void ReadCsv::readEstudiantes(string _path, ListaDobleEstud*& listaDobleEst) {
     string carnet, dpi, nombre, carrera, correo, passw, creditos, edad;
     //_path = R"(C:\Users\tomas\OneDrive\Documents\201800524\2021\Segundo semestre\EDD\Laboratorio\EDD_SmartClass_201800524\Estudiantes2.csv)";
     _path = R"(C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estudiantes.csv)";
+
     string linea;
     char delimitador = ',';
 
@@ -35,6 +36,7 @@ void ReadCsv::readEstudiantes(string _path) {
 
         auto* nuevoEstudiante = new Estudiante(stoi(carnet), stoll(dpi, nullptr, 10), nombre, carrera, correo, passw, stoi(creditos), stoi(edad));
         listaDobleEst->insertar(*nuevoEstudiante);
+        cout<<"parar"<<endl;
     }
     archivo.close();
 

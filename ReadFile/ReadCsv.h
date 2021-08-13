@@ -17,8 +17,7 @@ using namespace std;
 class ReadCsv {
 private:
 public:
-    ListaDobleEstud* listaDobleEst = new ListaDobleEstud();
-    void readEstudiantes(string);
+    void readEstudiantes(string, ListaDobleEstud*&); //Recibir lista por referencia
     void validarDatos(string, string, string);
 };
 
