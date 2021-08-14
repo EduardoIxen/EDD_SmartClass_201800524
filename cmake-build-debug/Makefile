@@ -128,6 +128,30 @@ EDD_SmartClass_201800524/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/build
 .PHONY : EDD_SmartClass_201800524/fast
 
+Controladores/CEstudiante.obj: Controladores/CEstudiante.cpp.obj
+.PHONY : Controladores/CEstudiante.obj
+
+# target to build an object file
+Controladores/CEstudiante.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj
+.PHONY : Controladores/CEstudiante.cpp.obj
+
+Controladores/CEstudiante.i: Controladores/CEstudiante.cpp.i
+.PHONY : Controladores/CEstudiante.i
+
+# target to preprocess a source file
+Controladores/CEstudiante.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.i
+.PHONY : Controladores/CEstudiante.cpp.i
+
+Controladores/CEstudiante.s: Controladores/CEstudiante.cpp.s
+.PHONY : Controladores/CEstudiante.s
+
+# target to generate assembly for a file
+Controladores/CEstudiante.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.s
+.PHONY : Controladores/CEstudiante.cpp.s
+
 Estructuras/ListaDobleEstud.obj: Estructuras/ListaDobleEstud.cpp.obj
 .PHONY : Estructuras/ListaDobleEstud.obj
 
@@ -257,6 +281,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... EDD_SmartClass_201800524
+	@echo ... Controladores/CEstudiante.obj
+	@echo ... Controladores/CEstudiante.i
+	@echo ... Controladores/CEstudiante.s
 	@echo ... Estructuras/ListaDobleEstud.obj
 	@echo ... Estructuras/ListaDobleEstud.i
 	@echo ... Estructuras/ListaDobleEstud.s

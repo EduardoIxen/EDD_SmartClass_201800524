@@ -2,7 +2,7 @@ digraph G{
  rankdir = LR; 
 node [shape=box]; 
 compound=true; 
-"0x8c7258"[label=" Carnet: 201700886
+"0x11d7258"[label=" Carnet: 201700886
 DPI: 3502451230508
 Nombre: Emilia Miramontes
 Carrera: Ingeniería en Ciencias y Sistemas
@@ -11,7 +11,7 @@ Pass: roxodiciqi
 Creditos: 205
 Edad: 21
 "];
-"0x8c73f0"[label=" Carnet: 201800524
+"0x11d73f0"[label=" Carnet: 201800524
 DPI: 7249529279753
 Nombre: Juan Curiel
 Carrera: Ingeniería Industrial
@@ -20,7 +20,7 @@ Pass: zanolexima
 Creditos: 245
 Edad: 24
 "];
-"0x8c75a8"[label=" Carnet: 201822186
+"0x11d75a8"[label=" Carnet: 201822186
 DPI: 9298434863898
 Nombre: Eloisa Rincón
 Carrera: Ingeniería Civil
@@ -29,7 +29,7 @@ Pass: toqelijanu
 Creditos: 95
 Edad: 19
 "];
-"0x8cb0b0"[label=" Carnet: 201901425
+"0x11db0b0"[label=" Carnet: 201901425
 DPI: 4131766125532
 Nombre: Bernardo Hinojosa
 Carrera: Ingeniería Mecánica
@@ -38,7 +38,7 @@ Pass: wosopumano
 Creditos: 100
 Edad: 20
 "];
-"0x8cb430"[label=" Carnet: 201503186
+"0x11db430"[label=" Carnet: 201503186
 DPI: 8549191766348
 Nombre: Manuel Manzanares
 Carrera: Ingeniería Eléctrica
@@ -47,7 +47,7 @@ Pass: rejumudore
 Creditos: 226
 Edad: 24
 "];
-"0x8cb548"[label=" Carnet: 201123146
+"0x11db548"[label=" Carnet: 201123146
 DPI: 9616636196552
 Nombre: Julia Corona
 Carrera: Ingeniería Electrónica
@@ -56,7 +56,7 @@ Pass: xojobavuji
 Creditos: 237
 Edad: 26
 "];
-"0x8cb660"[label=" Carnet: 201704186
+"0x11db660"[label=" Carnet: 201704186
 DPI: 4778315315575
 Nombre: Berta Carrasco
 Carrera: Ingeniería Ambiental
@@ -65,7 +65,7 @@ Pass: gayahizatu
 Creditos: 210
 Edad: 22
 "];
-"0x8cb778"[label=" Carnet: 202000786
+"0x11db778"[label=" Carnet: 202000786
 DPI: 7382344774121
 Nombre: Lola Delapaz
 Carrera: Ingeniería Química
@@ -74,7 +74,7 @@ Pass: hujocikimi
 Creditos: 45
 Edad: 19
 "];
-"0x8cc108"[label=" Carnet: 201611446
+"0x11dc108"[label=" Carnet: 201611446
 DPI: 2511893949443
 Nombre: Sonia Arteaga
 Carrera: Ingeniería Mecánica Industrial
@@ -83,7 +83,7 @@ Pass: rezutafila
 Creditos: 195
 Edad: 23
 "];
-"0x8cc288"[label="Carnet: 2020212133
+"0x11dc288"[label=" Carnet: 2020212133
 DPI: 3423442386382
 Nombre: Benjamín Asencio
 Carrera: Ingeniería Mecánica Eléctrica
@@ -92,16 +92,26 @@ Pass: runoqozepo
 Creditos: 117
 Edad: 20
 "];
-"0x8c7258" -> "0x8c73f0" [dir="both"];
-"0x8c73f0" -> "0x8c75a8" [dir="both"];
-"0x8c75a8" -> "0x8cb0b0" [dir="both"];
-"0x8cb0b0" -> "0x8cb430" [dir="both"];
-"0x8cb430" -> "0x8cb548" [dir="both"];
-"0x8cb548" -> "0x8cb660" [dir="both"];
-"0x8cb660" -> "0x8cb778" [dir="both"];
-"0x8cb778" -> "0x8cc108" [dir="both"];
-"0x8cc108" -> "0x8cc288" [dir="both"];
-"0x8cc288" -> "0x8c7258"[dir="both"];
+"0x11db810"[label="Carnet: 201800524
+DPI: 1230987654567
+Nombre: Tomas ixen rucuch
+Carrera: ciencias y sistemas
+Correo: eduixen@gmail.com
+Pass: 123123
+Creditos: 21
+Edad: 33
+"];
+"0x11d7258" -> "0x11d73f0" [dir="both"];
+"0x11d73f0" -> "0x11d75a8" [dir="both"];
+"0x11d75a8" -> "0x11db0b0" [dir="both"];
+"0x11db0b0" -> "0x11db430" [dir="both"];
+"0x11db430" -> "0x11db548" [dir="both"];
+"0x11db548" -> "0x11db660" [dir="both"];
+"0x11db660" -> "0x11db778" [dir="both"];
+"0x11db778" -> "0x11dc108" [dir="both"];
+"0x11dc108" -> "0x11dc288" [dir="both"];
+"0x11dc288" -> "0x11db810" [dir="both"];
+"0x11db810" -> "0x11d7258"[dir="both"];
 
 }
 

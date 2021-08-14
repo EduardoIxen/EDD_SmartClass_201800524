@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.cpp
+CEstudiante.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.h
+regex
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/regex
+../Estructuras/ListaDobleEstud.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
+
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
 iostream
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/iostream
@@ -25,22 +35,4 @@ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
 iostream
 -
-
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.cpp
-ReadCsv.h
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.h
-
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.h
-iostream
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/iostream
-fstream
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/fstream
-sstream
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/sstream
-regex
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/regex
-../Objetos/Estudiante.h
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
-../Estructuras/ListaDobleEstud.h
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
 

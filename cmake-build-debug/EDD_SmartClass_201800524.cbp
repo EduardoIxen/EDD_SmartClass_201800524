@@ -82,6 +82,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.cpp">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.cpp">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
