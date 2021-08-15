@@ -7,6 +7,7 @@
 
 #include "regex"
 #include "../Estructuras/ListaDobleEstud.h"
+#include "../Estructuras/NodoEstudiante.h"
 
 class CEstudiante {
 private:
@@ -14,10 +15,11 @@ private:
     bool validarDpi(string);
     bool validarCorreo(string);
     bool verificarNumero(string);
+    void cambioDeDatos(NodoEstudiante*&);
 public:
     void agregarEstudiante(ListaDobleEstud*&);
-    void modificarEstudiante(ListaDobleEstud*&);
-    void eliminarEstudiante(ListaDobleEstud*&);
+    void modificarEstudiante(ListaDobleEstud*&, string);
+    void eliminarEstudiante(ListaDobleEstud*&, string);
 };
 
 

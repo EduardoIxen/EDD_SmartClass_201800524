@@ -9,12 +9,16 @@ int main() {
     auto* listaEstudiantes = new ListaDobleEstud();
     ReadCsv leer;
     leer.readEstudiantes("nada", listaEstudiantes); //paso de lista por referencia
-    cout<<"----------------------------- Comienzo recorrido"<<endl;
-    listaEstudiantes->recorrerLista();
-    listaEstudiantes->generarGrafo();
+    //listaEstudiantes->recorrerLista(); //recorrer lista
+    //listaEstudiantes->generarGrafo(); //generar grafo
     cout<<"----------------------------- pass"<<endl;
     CEstudiante agregarEst;
-    agregarEst.agregarEstudiante(listaEstudiantes);
-    listaEstudiantes->generarGrafo();
+    //agregarEst.agregarEstudiante(listaEstudiantes); //agregar estudiantes a mano
+    //agregarEst.modificarEstudiante(listaEstudiantes, "3423442386382"); //modificar estudiantes de la lista
+    //listaEstudiantes->generarGrafo();
+    //agregarEst.eliminarEstudiante(listaEstudiantes, "7249529279753");
+    //cout<<listaEstudiantes->getTamanio()<<endl;
+
+
     return 0;
 }

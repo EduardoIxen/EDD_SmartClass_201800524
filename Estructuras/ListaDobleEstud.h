@@ -20,7 +20,10 @@ private:
     string dirToString(NodoEstudiante* valor);
 public:
     ListaDobleEstud();
-    void insertar(Estudiante);
+    void insertar(Estudiante*);
+    void setUltimo(NodoEstudiante*);
+    void setPrimero(NodoEstudiante*);
+    void setTamanio(int);
     int getTamanio();
     NodoEstudiante* getPrimero();
     NodoEstudiante* getUltimo();

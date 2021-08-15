@@ -9,18 +9,19 @@
 
 class NodoEstudiante {
 private:
-    Estudiante estudiante;
+    Estudiante* estudiante;
     int id;
     NodoEstudiante* siguiente;
     NodoEstudiante* anterior;
 public:
-    NodoEstudiante(Estudiante, int);
-    void setEstudiante(Estudiante);
+    NodoEstudiante(Estudiante*, int);
+    NodoEstudiante();
+    void setEstudiante(Estudiante*);
     void setId(int);
     void setSiguiente(NodoEstudiante*);
     void setAnterior(NodoEstudiante*);
 
-    Estudiante getEstudiante();
+    Estudiante* getEstudiante();
     int getId();
     NodoEstudiante* getSiguiente();
     NodoEstudiante* getAnterior();

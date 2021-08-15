@@ -4,7 +4,7 @@
 
 #include "NodoEstudiante.h"
 
-NodoEstudiante::NodoEstudiante(Estudiante _estudiante, int _id)
+NodoEstudiante::NodoEstudiante(Estudiante* _estudiante, int _id)
 {
     this->estudiante = _estudiante;
     this->id = _id;
@@ -12,7 +12,7 @@ NodoEstudiante::NodoEstudiante(Estudiante _estudiante, int _id)
     this->anterior = NULL;
 }
 
-void NodoEstudiante::setEstudiante(Estudiante _estudiante){
+void NodoEstudiante::setEstudiante(Estudiante* _estudiante){
     this->estudiante = _estudiante;
 }
 
@@ -28,7 +28,7 @@ void NodoEstudiante::setAnterior(NodoEstudiante* _anterior){
     this->anterior = _anterior;
 }
 
-Estudiante NodoEstudiante::getEstudiante(){
+Estudiante* NodoEstudiante::getEstudiante(){
     return this->estudiante;
 }
 
@@ -45,5 +45,9 @@ NodoEstudiante* NodoEstudiante::getAnterior(){
 }
 
 NodoEstudiante::~NodoEstudiante() {
+
+}
+
+NodoEstudiante::NodoEstudiante() {
 
 }
