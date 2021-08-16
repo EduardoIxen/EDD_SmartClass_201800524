@@ -97,6 +97,24 @@ void ListaDobleEstud::generarGrafo() {
 
 }
 
+bool ListaDobleEstud::buscarEstudiante(string carnet) {
+    if (this->tamanio==0){
+        cout<<"----LISTA VACIA, NO HAY ELEMENTOS PARA BUSCAR----";
+        return false;
+    }
+    if (this->getUltimo()->getEstudiante()->getCarnet() == stoi(carnet)){
+        return true;
+    }
+    NodoEstudiante* aux = this->getPrimero();
+    while (aux->getSiguiente() != this->getPrimero()){
+        if(aux->getEstudiante()->getCarnet() == stoi(carnet)){
+            return true;
+        }
+        aux = aux->getSiguiente();
+    }
+    return false;
+}
+
 string ListaDobleEstud::dirToString(NodoEstudiante *valor) { //obtiene direccion de memoria del nodo para usarlo como identificador
     stringstream ss;
     ss << &*valor;

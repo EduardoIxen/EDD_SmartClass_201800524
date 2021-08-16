@@ -143,6 +143,45 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Controladores\CEstudiante.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Controladores\CEstudiante.cpp.s
 
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj: ../Objetos/Tarea.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Objetos\Tarea.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Objetos\Tarea.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Objetos\Tarea.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Objetos\Tarea.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Objetos\Tarea.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Objetos\Tarea.cpp.s
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj: ../Objetos/Fecha.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Objetos\Fecha.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Objetos\Fecha.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Objetos\Fecha.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Objetos\Fecha.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Objetos\Fecha.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Objetos\Fecha.cpp.s
+
+CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj: ../ReadFile/ReadTareas.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\ReadFile\ReadTareas.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\ReadFile\ReadTareas.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\ReadFile\ReadTareas.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\ReadFile\ReadTareas.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\ReadFile\ReadTareas.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\ReadFile\ReadTareas.cpp.s
+
 # Object files for target EDD_SmartClass_201800524
 EDD_SmartClass_201800524_OBJECTS = \
 "CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj" \
@@ -150,7 +189,10 @@ EDD_SmartClass_201800524_OBJECTS = \
 "CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.obj" \
 "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj" \
 "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj" \
-"CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj"
+"CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj"
 
 # External object files for target EDD_SmartClass_201800524
 EDD_SmartClass_201800524_EXTERNAL_OBJECTS =
@@ -161,11 +203,14 @@ EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/R
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/build.make
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/linklibs.rsp
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/objects1.rsp
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable EDD_SmartClass_201800524.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable EDD_SmartClass_201800524.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EDD_SmartClass_201800524.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -29,6 +29,7 @@ public:
     NodoEstudiante* getUltimo();
     void recorrerLista();
     void generarGrafo();
+    bool buscarEstudiante(string carnet);
 };
 
 

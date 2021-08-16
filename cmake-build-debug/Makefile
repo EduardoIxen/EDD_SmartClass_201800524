@@ -224,6 +224,54 @@ Objetos/Estudiante.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Estudiante.cpp.s
 .PHONY : Objetos/Estudiante.cpp.s
 
+Objetos/Fecha.obj: Objetos/Fecha.cpp.obj
+.PHONY : Objetos/Fecha.obj
+
+# target to build an object file
+Objetos/Fecha.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj
+.PHONY : Objetos/Fecha.cpp.obj
+
+Objetos/Fecha.i: Objetos/Fecha.cpp.i
+.PHONY : Objetos/Fecha.i
+
+# target to preprocess a source file
+Objetos/Fecha.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.i
+.PHONY : Objetos/Fecha.cpp.i
+
+Objetos/Fecha.s: Objetos/Fecha.cpp.s
+.PHONY : Objetos/Fecha.s
+
+# target to generate assembly for a file
+Objetos/Fecha.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.s
+.PHONY : Objetos/Fecha.cpp.s
+
+Objetos/Tarea.obj: Objetos/Tarea.cpp.obj
+.PHONY : Objetos/Tarea.obj
+
+# target to build an object file
+Objetos/Tarea.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj
+.PHONY : Objetos/Tarea.cpp.obj
+
+Objetos/Tarea.i: Objetos/Tarea.cpp.i
+.PHONY : Objetos/Tarea.i
+
+# target to preprocess a source file
+Objetos/Tarea.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.i
+.PHONY : Objetos/Tarea.cpp.i
+
+Objetos/Tarea.s: Objetos/Tarea.cpp.s
+.PHONY : Objetos/Tarea.s
+
+# target to generate assembly for a file
+Objetos/Tarea.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.s
+.PHONY : Objetos/Tarea.cpp.s
+
 ReadFile/ReadCsv.obj: ReadFile/ReadCsv.cpp.obj
 .PHONY : ReadFile/ReadCsv.obj
 
@@ -247,6 +295,30 @@ ReadFile/ReadCsv.s: ReadFile/ReadCsv.cpp.s
 ReadFile/ReadCsv.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.s
 .PHONY : ReadFile/ReadCsv.cpp.s
+
+ReadFile/ReadTareas.obj: ReadFile/ReadTareas.cpp.obj
+.PHONY : ReadFile/ReadTareas.obj
+
+# target to build an object file
+ReadFile/ReadTareas.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj
+.PHONY : ReadFile/ReadTareas.cpp.obj
+
+ReadFile/ReadTareas.i: ReadFile/ReadTareas.cpp.i
+.PHONY : ReadFile/ReadTareas.i
+
+# target to preprocess a source file
+ReadFile/ReadTareas.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.i
+.PHONY : ReadFile/ReadTareas.cpp.i
+
+ReadFile/ReadTareas.s: ReadFile/ReadTareas.cpp.s
+.PHONY : ReadFile/ReadTareas.s
+
+# target to generate assembly for a file
+ReadFile/ReadTareas.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.s
+.PHONY : ReadFile/ReadTareas.cpp.s
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -293,9 +365,18 @@ help:
 	@echo ... Objetos/Estudiante.obj
 	@echo ... Objetos/Estudiante.i
 	@echo ... Objetos/Estudiante.s
+	@echo ... Objetos/Fecha.obj
+	@echo ... Objetos/Fecha.i
+	@echo ... Objetos/Fecha.s
+	@echo ... Objetos/Tarea.obj
+	@echo ... Objetos/Tarea.i
+	@echo ... Objetos/Tarea.s
 	@echo ... ReadFile/ReadCsv.obj
 	@echo ... ReadFile/ReadCsv.i
 	@echo ... ReadFile/ReadCsv.s
+	@echo ... ReadFile/ReadTareas.obj
+	@echo ... ReadFile/ReadTareas.i
+	@echo ... ReadFile/ReadTareas.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

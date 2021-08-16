@@ -1,0 +1,13 @@
+//
+// Created by Eduardo-Ixen on 15/08/2021.
+//
+
+#ifndef EDD_SMARTCLASS_201800524_ENUMESTADO_H
+#define EDD_SMARTCLASS_201800524_ENUMESTADO_H
+enum class Estado{
+    PENDIENTE = 1,
+    CUMPLIDO = 2,
+    INCUMPLIDO = 3,
+    INEXISTENTE = 4
+};
+#endif //EDD_SMARTCLASS_201800524_ENUMESTADO_H

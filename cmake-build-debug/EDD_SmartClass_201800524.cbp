@@ -100,16 +100,37 @@
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/EnumEstado.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.cpp">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Fecha.cpp">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Fecha.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Tarea.cpp">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Tarea.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.cpp">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadTareas.cpp">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadTareas.h">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/main.cpp">

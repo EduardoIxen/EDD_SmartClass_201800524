@@ -19,16 +19,37 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj: \
 CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Estudiante.cpp.obj: \
  ../Objetos/Estudiante.cpp \
  ../Objetos/Estudiante.h
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj: \
+ ../Objetos/Fecha.cpp \
+ ../Objetos/Fecha.h
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj: \
+ ../Objetos/EnumEstado.h \
+ ../Objetos/Fecha.h \
+ ../Objetos/Tarea.cpp \
+ ../Objetos/Tarea.h
 CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.obj: \
  ../Estructuras/ListaDobleEstud.h \
  ../Estructuras/NodoEstudiante.h \
  ../Objetos/Estudiante.h \
  ../ReadFile/ReadCsv.cpp \
  ../ReadFile/ReadCsv.h
+CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj: \
+ ../Estructuras/ListaDobleEstud.h \
+ ../Estructuras/NodoEstudiante.h \
+ ../Objetos/EnumEstado.h \
+ ../Objetos/Estudiante.h \
+ ../Objetos/Fecha.h \
+ ../Objetos/Tarea.h \
+ ../ReadFile/ReadTareas.cpp \
+ ../ReadFile/ReadTareas.h
 CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj: \
  ../Controladores/CEstudiante.h \
  ../Estructuras/ListaDobleEstud.h \
  ../Estructuras/NodoEstudiante.h \
+ ../Objetos/EnumEstado.h \
  ../Objetos/Estudiante.h \
+ ../Objetos/Fecha.h \
+ ../Objetos/Tarea.h \
  ../ReadFile/ReadCsv.h \
+ ../ReadFile/ReadTareas.h \
  ../main.cpp
