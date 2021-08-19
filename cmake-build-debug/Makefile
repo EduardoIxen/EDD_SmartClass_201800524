@@ -176,6 +176,30 @@ Controladores/CTarea.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.s
 .PHONY : Controladores/CTarea.cpp.s
 
+Estructuras/ColaDeError.obj: Estructuras/ColaDeError.cpp.obj
+.PHONY : Estructuras/ColaDeError.obj
+
+# target to build an object file
+Estructuras/ColaDeError.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.obj
+.PHONY : Estructuras/ColaDeError.cpp.obj
+
+Estructuras/ColaDeError.i: Estructuras/ColaDeError.cpp.i
+.PHONY : Estructuras/ColaDeError.i
+
+# target to preprocess a source file
+Estructuras/ColaDeError.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.i
+.PHONY : Estructuras/ColaDeError.cpp.i
+
+Estructuras/ColaDeError.s: Estructuras/ColaDeError.cpp.s
+.PHONY : Estructuras/ColaDeError.s
+
+# target to generate assembly for a file
+Estructuras/ColaDeError.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.s
+.PHONY : Estructuras/ColaDeError.cpp.s
+
 Estructuras/LinealizarMatriz.obj: Estructuras/LinealizarMatriz.cpp.obj
 .PHONY : Estructuras/LinealizarMatriz.obj
 
@@ -224,6 +248,30 @@ Estructuras/ListaDobleEstud.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.s
 .PHONY : Estructuras/ListaDobleEstud.cpp.s
 
+Estructuras/NodoError.obj: Estructuras/NodoError.cpp.obj
+.PHONY : Estructuras/NodoError.obj
+
+# target to build an object file
+Estructuras/NodoError.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.obj
+.PHONY : Estructuras/NodoError.cpp.obj
+
+Estructuras/NodoError.i: Estructuras/NodoError.cpp.i
+.PHONY : Estructuras/NodoError.i
+
+# target to preprocess a source file
+Estructuras/NodoError.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.i
+.PHONY : Estructuras/NodoError.cpp.i
+
+Estructuras/NodoError.s: Estructuras/NodoError.cpp.s
+.PHONY : Estructuras/NodoError.s
+
+# target to generate assembly for a file
+Estructuras/NodoError.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.s
+.PHONY : Estructuras/NodoError.cpp.s
+
 Estructuras/NodoEstudiante.obj: Estructuras/NodoEstudiante.cpp.obj
 .PHONY : Estructuras/NodoEstudiante.obj
 
@@ -271,6 +319,54 @@ Estructuras/NodoMatrizL.s: Estructuras/NodoMatrizL.cpp.s
 Estructuras/NodoMatrizL.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.s
 .PHONY : Estructuras/NodoMatrizL.cpp.s
+
+Menu/Menu.obj: Menu/Menu.cpp.obj
+.PHONY : Menu/Menu.obj
+
+# target to build an object file
+Menu/Menu.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.obj
+.PHONY : Menu/Menu.cpp.obj
+
+Menu/Menu.i: Menu/Menu.cpp.i
+.PHONY : Menu/Menu.i
+
+# target to preprocess a source file
+Menu/Menu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.i
+.PHONY : Menu/Menu.cpp.i
+
+Menu/Menu.s: Menu/Menu.cpp.s
+.PHONY : Menu/Menu.s
+
+# target to generate assembly for a file
+Menu/Menu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.s
+.PHONY : Menu/Menu.cpp.s
+
+Objetos/Error.obj: Objetos/Error.cpp.obj
+.PHONY : Objetos/Error.obj
+
+# target to build an object file
+Objetos/Error.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.obj
+.PHONY : Objetos/Error.cpp.obj
+
+Objetos/Error.i: Objetos/Error.cpp.i
+.PHONY : Objetos/Error.i
+
+# target to preprocess a source file
+Objetos/Error.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.i
+.PHONY : Objetos/Error.cpp.i
+
+Objetos/Error.s: Objetos/Error.cpp.s
+.PHONY : Objetos/Error.s
+
+# target to generate assembly for a file
+Objetos/Error.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.s
+.PHONY : Objetos/Error.cpp.s
 
 Objetos/Estudiante.obj: Objetos/Estudiante.cpp.obj
 .PHONY : Objetos/Estudiante.obj
@@ -431,18 +527,30 @@ help:
 	@echo ... Controladores/CTarea.obj
 	@echo ... Controladores/CTarea.i
 	@echo ... Controladores/CTarea.s
+	@echo ... Estructuras/ColaDeError.obj
+	@echo ... Estructuras/ColaDeError.i
+	@echo ... Estructuras/ColaDeError.s
 	@echo ... Estructuras/LinealizarMatriz.obj
 	@echo ... Estructuras/LinealizarMatriz.i
 	@echo ... Estructuras/LinealizarMatriz.s
 	@echo ... Estructuras/ListaDobleEstud.obj
 	@echo ... Estructuras/ListaDobleEstud.i
 	@echo ... Estructuras/ListaDobleEstud.s
+	@echo ... Estructuras/NodoError.obj
+	@echo ... Estructuras/NodoError.i
+	@echo ... Estructuras/NodoError.s
 	@echo ... Estructuras/NodoEstudiante.obj
 	@echo ... Estructuras/NodoEstudiante.i
 	@echo ... Estructuras/NodoEstudiante.s
 	@echo ... Estructuras/NodoMatrizL.obj
 	@echo ... Estructuras/NodoMatrizL.i
 	@echo ... Estructuras/NodoMatrizL.s
+	@echo ... Menu/Menu.obj
+	@echo ... Menu/Menu.i
+	@echo ... Menu/Menu.s
+	@echo ... Objetos/Error.obj
+	@echo ... Objetos/Error.i
+	@echo ... Objetos/Error.s
 	@echo ... Objetos/Estudiante.obj
 	@echo ... Objetos/Estudiante.i
 	@echo ... Objetos/Estudiante.s

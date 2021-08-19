@@ -8,11 +8,18 @@
 #include "./ReadFile/ReadTareas.h"
 #include "./Estructuras/LinealizarMatriz.h"
 #include "./Controladores/CTarea.h"
+#include "./Estructuras/ColaDeError.h"
+//#include "./Menu/Menu.h"
 
 int main() {
-    auto* listaEstudiantes = new ListaDobleEstud();
+    //Menu menu;
+    //menu.menuPrincipal();
+
+    auto* listaEstudiantes = new ListaDobleEstud(); // yaaaa
+    ColaDeError* nuevaCola = new ColaDeError(); // yaaa
+
     ReadCsv leer;
-    leer.readEstudiantes("nada", listaEstudiantes); //paso de lista por referencia
+    leer.readEstudiantes("nada", listaEstudiantes, nuevaCola); //paso de lista por referencia
     //listaEstudiantes->recorrerLista(); //recorrer lista
     //listaEstudiantes->generarGrafo(); //generar grafo
     cout<<"----------------------------- pass"<<endl;
@@ -54,7 +61,7 @@ int main() {
     auto* linealizar = new LinealizarMatriz();
 
     ReadTareas cargarT;
-    cargarT.readTareas("sin dato", matrizTar ,listaEstudiantes);
+    cargarT.readTareas("sin dato", matrizTar ,listaEstudiantes, nuevaCola); //falta errores
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 30; ++j) {
             for (int k = 0; k < 5; ++k) {
@@ -90,5 +97,7 @@ int main() {
     //controladorTarea.modificarTarea(linealizar, 1);
     controladorTarea.eliminarTarea(linealizar,0);
     linealizar->generarGrafo();
+    nuevaCola->generarGrafo();
+
     return 0;
 }

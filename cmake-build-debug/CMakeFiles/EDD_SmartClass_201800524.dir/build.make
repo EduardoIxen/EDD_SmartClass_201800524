@@ -221,6 +221,58 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Controladores\CTarea.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Controladores\CTarea.cpp.s
 
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.obj: ../Objetos/Error.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Objetos\Error.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Objetos\Error.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Objetos\Error.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Objetos\Error.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Objetos\Error.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Objetos\Error.cpp.s
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.obj: ../Estructuras/ColaDeError.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\ColaDeError.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\ColaDeError.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\ColaDeError.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\ColaDeError.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\ColaDeError.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\ColaDeError.cpp.s
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.obj: ../Estructuras/NodoError.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\NodoError.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\NodoError.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\NodoError.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\NodoError.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\NodoError.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\NodoError.cpp.s
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.obj: ../Menu/Menu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Menu\Menu.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Menu\Menu.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Menu\Menu.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Menu\Menu.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Menu\Menu.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Menu\Menu.cpp.s
+
 # Object files for target EDD_SmartClass_201800524
 EDD_SmartClass_201800524_OBJECTS = \
 "CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj" \
@@ -234,7 +286,11 @@ EDD_SmartClass_201800524_OBJECTS = \
 "CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj" \
 "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj" \
 "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj" \
-"CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.obj"
+"CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.obj"
 
 # External object files for target EDD_SmartClass_201800524
 EDD_SmartClass_201800524_EXTERNAL_OBJECTS =
@@ -251,11 +307,15 @@ EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/R
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/build.make
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/linklibs.rsp
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/objects1.rsp
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable EDD_SmartClass_201800524.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable EDD_SmartClass_201800524.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EDD_SmartClass_201800524.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

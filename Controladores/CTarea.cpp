@@ -116,6 +116,7 @@ void CTarea::eliminarTarea(LinealizarMatriz *& listaTareas, int indice) {
                 cout<<"1) Si"<<endl;
                 cout<<"2) No"<<endl;
                 cin >> confirmar;
+                cin.ignore();
                 if (confirmar == 1){
                     aux->setTarea(NULL);
                     cout<<"--------------------- TAREA ELIMINADA -----------------"<<endl;
@@ -139,6 +140,7 @@ void CTarea::eliminarTarea(LinealizarMatriz *& listaTareas, int indice) {
                     cout<<"1) Si"<<endl;
                     cout<<"2) No"<<endl;
                     cin >> confirmar;
+                    cin.ignore();
                     if (confirmar == 1){
                         aux->setTarea(NULL);
                         cout<<"--------------------- TAREA ELIMINADA -----------------"<<endl;

@@ -19,6 +19,11 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.obj: \
  ../Objetos/Estudiante.h \
  ../Objetos/Fecha.h \
  ../Objetos/Tarea.h
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.obj: \
+ ../Estructuras/ColaDeError.cpp \
+ ../Estructuras/ColaDeError.h \
+ ../Estructuras/NodoError.h \
+ ../Objetos/Error.h
 CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj: \
  ../Estructuras/LinealizarMatriz.cpp \
  ../Estructuras/LinealizarMatriz.h \
@@ -31,6 +36,10 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj: \
  ../Estructuras/ListaDobleEstud.h \
  ../Estructuras/NodoEstudiante.h \
  ../Objetos/Estudiante.h
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoError.cpp.obj: \
+ ../Estructuras/NodoError.cpp \
+ ../Estructuras/NodoError.h \
+ ../Objetos/Error.h
 CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj: \
  ../Estructuras/NodoEstudiante.cpp \
  ../Estructuras/NodoEstudiante.h \
@@ -41,6 +50,12 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj: \
  ../Objetos/EnumEstado.h \
  ../Objetos/Fecha.h \
  ../Objetos/Tarea.h
+CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.obj: \
+ ../Menu/Menu.cpp \
+ ../Menu/Menu.h
+CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.obj: \
+ ../Objetos/Error.cpp \
+ ../Objetos/Error.h
 CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Estudiante.cpp.obj: \
  ../Objetos/Estudiante.cpp \
  ../Objetos/Estudiante.h
@@ -53,15 +68,21 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj: \
  ../Objetos/Tarea.cpp \
  ../Objetos/Tarea.h
 CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadCsv.cpp.obj: \
+ ../Estructuras/ColaDeError.h \
  ../Estructuras/ListaDobleEstud.h \
+ ../Estructuras/NodoError.h \
  ../Estructuras/NodoEstudiante.h \
+ ../Objetos/Error.h \
  ../Objetos/Estudiante.h \
  ../ReadFile/ReadCsv.cpp \
  ../ReadFile/ReadCsv.h
 CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj: \
+ ../Estructuras/ColaDeError.h \
  ../Estructuras/ListaDobleEstud.h \
+ ../Estructuras/NodoError.h \
  ../Estructuras/NodoEstudiante.h \
  ../Objetos/EnumEstado.h \
+ ../Objetos/Error.h \
  ../Objetos/Estudiante.h \
  ../Objetos/Fecha.h \
  ../Objetos/Tarea.h \
@@ -70,11 +91,15 @@ CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj: \
 CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj: \
  ../Controladores/CEstudiante.h \
  ../Controladores/CTarea.h \
+ ../Estructuras/ColaDeError.h \
  ../Estructuras/LinealizarMatriz.h \
  ../Estructuras/ListaDobleEstud.h \
+ ../Estructuras/NodoError.h \
  ../Estructuras/NodoEstudiante.h \
  ../Estructuras/NodoMatrizL.h \
+ ../Menu/Menu.h \
  ../Objetos/EnumEstado.h \
+ ../Objetos/Error.h \
  ../Objetos/Estudiante.h \
  ../Objetos/Fecha.h \
  ../Objetos/Tarea.h \

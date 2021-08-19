@@ -4,10 +4,11 @@
 
 #include "ReadTareas.h"
 
-void ReadTareas::readTareas(string path, Tarea *(&matrizTar)[9][30][5], ListaDobleEstud *&listaEst) {
+void ReadTareas::readTareas(string path, Tarea *(&matrizTar)[9][30][5], ListaDobleEstud *&listaEst, ColaDeError*& colaDeError) {
     string mes, dia, hora, carnet, nombre, descripcion, materia, fecha, estado, linea;
     char delimitador = ',';
     int id = 0;
+    int numLinea = 1;
     path = R"(C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Tareas.csv)";
 
     ifstream archivo(path); //obtener el contenido del archivo
@@ -19,6 +20,7 @@ void ReadTareas::readTareas(string path, Tarea *(&matrizTar)[9][30][5], ListaDob
 
     getline(archivo, linea);  //separar el contenido del archivo en lineas (quitamos la linea del encabezado csv)
     while (getline(archivo, linea)) {
+        numLinea += 1;
         stringstream stream(linea); //convertir string en stream para insertar y extraer desde y a string
         getline(stream, mes, delimitador);
         getline(stream, dia, delimitador);
@@ -30,7 +32,7 @@ void ReadTareas::readTareas(string path, Tarea *(&matrizTar)[9][30][5], ListaDob
         getline(stream, fecha, delimitador);
         getline(stream, estado, delimitador);
 
-        if (validarDatos(carnet, fecha, hora, dia, mes, listaEst)) {
+        if (validarDatos(carnet, fecha, hora, dia, mes, listaEst, colaDeError, numLinea)) {
             Tarea *nuevaT = new Tarea(id++, stoi(carnet), nombre, descripcion, materia, crearFecha(fecha), stoi(hora),
                                       obtenerEstado(estado));
             matrizTar[stoi(hora) - 8][stoi(dia) - 1][stoi(mes) - 7] = nuevaT;
@@ -45,14 +47,30 @@ void ReadTareas::readTareas(string path, Tarea *(&matrizTar)[9][30][5], ListaDob
 }
 
 bool
-ReadTareas::validarDatos(string carnet, string fecha, string hora, string dia, string mes, ListaDobleEstud *&listaEst) {
+ReadTareas::validarDatos(string carnet, string fecha, string hora, string dia, string mes, ListaDobleEstud *&listaEst, ColaDeError*& colaDeError, int numLinea) {
     bool existeCarnet = listaEst->buscarEstudiante(carnet);
     bool fechaValida = validarFecha(fecha);
     bool encabezadoValido = validarEncabezado(mes, dia, hora);
+    string descripcion = "Linea numero"+ to_string(numLinea)+"\n";
 
     if (existeCarnet && fechaValida && encabezadoValido) return true;
 
+    if (!existeCarnet){
+        descripcion += "*No existe el carnet: " + carnet+"\n";
+    }
+    if(!fechaValida){
+        descripcion += "*Fecha invalida: "+ fecha+ "\n";
+    }
+    if(!encabezadoValido){
+        descripcion += "*Verificar que el dia, mes y hora esten dentro del\n rango establecido. (Dia: "+dia+ ",Mes: "+mes+" ,Hora "+hora+")" "\n";
+    }
+
     cout << "ERROR// TAREA CON DATOS INCORRECTOS" << endl;
+    Error* nuevoError = new Error();
+    nuevoError->setId(0);
+    nuevoError->setTipo("Tarea");
+    nuevoError->setDescripcion(descripcion);
+    colaDeError->enqueue(nuevoError);
     return false;
 }
 

@@ -10,18 +10,19 @@
 #include "bits/stdc++.h"
 #include "../Estructuras/ListaDobleEstud.h"
 #include "../Objetos/Tarea.h"
+#include "../Estructuras/ColaDeError.h"
 
 using namespace std;
 
 class ReadTareas {
 private:
-    bool validarDatos(string, string, string, string, string, ListaDobleEstud*&);
+    bool validarDatos(string, string, string, string, string, ListaDobleEstud*&, ColaDeError*& colaDeError, int);
     bool validarFecha(string);
     bool validarEncabezado(string, string, string);
     Estado obtenerEstado(string);
     Fecha* crearFecha(string);
 public:
-    void readTareas(string path, Tarea* (&matrizTar)[9][30][5] ,ListaDobleEstud*& listaEst); //paso de matriz por referencia
+    void readTareas(string path, Tarea* (&matrizTar)[9][30][5] ,ListaDobleEstud*& listaEst, ColaDeError*&); //paso de matriz por referencia
 };
 
 

@@ -11,14 +11,15 @@
 #include "regex"
 #include "../Objetos/Estudiante.h"
 #include "../Estructuras/ListaDobleEstud.h"
+#include "../Estructuras/ColaDeError.h"
 
 using namespace std;
 
 class ReadCsv {
 private:
 public:
-    void readEstudiantes(string, ListaDobleEstud*&); //Recibir lista por referencia
-    void validarDatos(string, string, string);
+    void readEstudiantes(string, ListaDobleEstud*&, ColaDeError*&); //Recibir lista por referencia
+    void validarDatos(string, string, string, ColaDeError*&, int);
 };
 
 
