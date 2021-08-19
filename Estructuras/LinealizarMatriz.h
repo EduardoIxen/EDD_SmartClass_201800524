@@ -20,6 +20,7 @@ private:
 public:
     LinealizarMatriz();
     void insertar(Tarea* , int);
+    bool insertarManual(Tarea*, int);
     void buscar(int, int, int);
     void recorrerLista();
     void generarGrafo();

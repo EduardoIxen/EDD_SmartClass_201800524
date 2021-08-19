@@ -10,6 +10,7 @@ void CEstudiante::agregarEstudiante(ListaDobleEstud *&lista) {
     do {
         cout << "############# INGRESE EL CARNET DEL ESTUDIANTE #############" << endl;
         cin >> carnet;
+        cin.ignore();
     } while (!validarCarnet(carnet));
     do {
         cout << "############## INGRESE EL DPI DEL ESTUDIANTE ###############" << endl;

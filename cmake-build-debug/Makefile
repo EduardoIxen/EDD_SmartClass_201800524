@@ -152,6 +152,30 @@ Controladores/CEstudiante.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.s
 .PHONY : Controladores/CEstudiante.cpp.s
 
+Controladores/CTarea.obj: Controladores/CTarea.cpp.obj
+.PHONY : Controladores/CTarea.obj
+
+# target to build an object file
+Controladores/CTarea.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.obj
+.PHONY : Controladores/CTarea.cpp.obj
+
+Controladores/CTarea.i: Controladores/CTarea.cpp.i
+.PHONY : Controladores/CTarea.i
+
+# target to preprocess a source file
+Controladores/CTarea.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.i
+.PHONY : Controladores/CTarea.cpp.i
+
+Controladores/CTarea.s: Controladores/CTarea.cpp.s
+.PHONY : Controladores/CTarea.s
+
+# target to generate assembly for a file
+Controladores/CTarea.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.s
+.PHONY : Controladores/CTarea.cpp.s
+
 Estructuras/LinealizarMatriz.obj: Estructuras/LinealizarMatriz.cpp.obj
 .PHONY : Estructuras/LinealizarMatriz.obj
 
@@ -404,6 +428,9 @@ help:
 	@echo ... Controladores/CEstudiante.obj
 	@echo ... Controladores/CEstudiante.i
 	@echo ... Controladores/CEstudiante.s
+	@echo ... Controladores/CTarea.obj
+	@echo ... Controladores/CTarea.i
+	@echo ... Controladores/CTarea.s
 	@echo ... Estructuras/LinealizarMatriz.obj
 	@echo ... Estructuras/LinealizarMatriz.i
 	@echo ... Estructuras/LinealizarMatriz.s

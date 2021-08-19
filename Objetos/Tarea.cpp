@@ -28,65 +28,65 @@ Tarea::Tarea() {
 }
 
 int Tarea::getId(){
-    return id;
+    return this->id;
 }
 
-void Tarea::setId(int id) {
-    this->id = id;
+void Tarea::setId(int _id) {
+    this->id = _id;
 }
 
 int Tarea::getCarnet() {
-    return carnet;
+    return this->carnet;
 }
 
-void Tarea::setCarnet(int carnet) {
-    this->carnet = carnet;
+void Tarea::setCarnet(int _carnet) {
+    this->carnet = _carnet;
 }
 
 string Tarea::getNombre() {
-    return nombre;
+    return this->nombre;
 }
 
-void Tarea::setNombre(string nombre) {
-    this->nombre = nombre;
+void Tarea::setNombre(string _nombre) {
+    this->nombre = _nombre;
 }
 
 string Tarea::getDescripcion() {
-    return descripcion;
+    return this->descripcion;
 }
 
-void Tarea::setDescripcion(string descripcion) {
-    this->descripcion = descripcion;
+void Tarea::setDescripcion(string _descripcion) {
+    this->descripcion = _descripcion;
 }
 
 string Tarea::getMateria() {
-    return materia;
+    return this->materia;
 }
 
-void Tarea::setMateria(string materia) {
-    this->materia = materia;
+void Tarea::setMateria(string _materia) {
+    this->materia = _materia;
 }
 
 Fecha* Tarea::getFecha() {
-    return fecha;
+    return this->fecha;
 }
 
-void Tarea::setFecha(Fecha* fecha) {
-    this->fecha = fecha;
+void Tarea::setFecha(Fecha* _fecha) {
+    this->fecha = _fecha;
 }
 
 int Tarea::getHora() {
-    return hora;
+    return this->hora;
 }
 
-void Tarea::setHora(int hora) {
-    this->hora = hora;
+void Tarea::setHora(int _hora) {
+    this->hora = _hora;
 }
 
 Estado Tarea::getEstado() {
-    return estado;
+    return this->estado;
 }
 
-void Tarea::setEstado(Estado estado) {
-    this->estado = estado;
+void Tarea::setEstado(Estado _estado) {
+    this->estado = _estado;
 }

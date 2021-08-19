@@ -7,6 +7,18 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
+CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.obj
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CTarea.cpp
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CTarea.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoMatrizL.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/EnumEstado.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Fecha.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Tarea.h
 CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.cpp
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.h
@@ -57,6 +69,7 @@ CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadTareas.h
 CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.h
+ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CTarea.h
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.h
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
  C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h

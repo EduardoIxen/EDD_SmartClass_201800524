@@ -55,6 +55,35 @@ void LinealizarMatriz::insertar(Tarea* _valor, int _id) {
 
 }
 
+bool LinealizarMatriz::insertarManual(Tarea * nuevaTarea, int posicion) {
+    NodoMatrizL* aux = this->primero;
+    while (aux->getSiguiente() != this->getPrimero()){
+        if (aux->getId() == posicion){
+            if (aux->getTarea() == NULL){
+                aux->setTarea(nuevaTarea);
+                cout<<"----TAREA INSERTADA CORRECTAMENTE----"<<endl;
+                return true;
+            } else{
+                cout<<"----POSICION OCUPADA POR OTRA TAREA, NO SE INSERTO----"<<endl;
+                return false;
+            }
+        }
+        aux = aux->getSiguiente();
+    }
+    if (aux->getId() == posicion){
+        if (aux->getTarea() == NULL){
+            aux->setTarea(nuevaTarea);
+            cout<<"----TAREA INSERTADA CORRECTAMENTE----"<<endl;
+            return true;
+        }else{
+            cout<<"----POSICION OCUPADA POR OTRA TAREA, NO SE INSERTO----"<<endl;
+            return false;
+        }
+    }
+    cout<<"----NO SE INSERTO LA TAREA: VERIFIQUE LA FECHA Y HORA----"<<endl;
+    return false;
+}
+
 void LinealizarMatriz::recorrerLista() {
     if (this->tamanio == 0){
         std::cout<<"----LISTA VACIA, NO SE PUEDE GENERAR EL REPORTE----";

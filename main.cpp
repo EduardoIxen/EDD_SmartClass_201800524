@@ -7,7 +7,7 @@
 #include "./Objetos/EnumEstado.h"
 #include "./ReadFile/ReadTareas.h"
 #include "./Estructuras/LinealizarMatriz.h"
-
+#include "./Controladores/CTarea.h"
 
 int main() {
     auto* listaEstudiantes = new ListaDobleEstud();
@@ -69,7 +69,7 @@ int main() {
         }
     }
 
-    cout<<"Ya linealizadoooo."<<endl;
+    /*cout<<"Ya linealizadoooo."<<endl;
     linealizar->recorrerLista();
     int dia, mes, hora;
     cout<<"Ingrese el dia"<<endl;
@@ -83,6 +83,12 @@ int main() {
     cin.ignore();
     linealizar->buscar(mes,dia,hora);
 
+    linealizar->generarGrafo();*/
+
+    CTarea controladorTarea;
+    //controladorTarea.agregarTarea(linealizar);
+    //controladorTarea.modificarTarea(linealizar, 1);
+    controladorTarea.eliminarTarea(linealizar,0);
     linealizar->generarGrafo();
     return 0;
 }

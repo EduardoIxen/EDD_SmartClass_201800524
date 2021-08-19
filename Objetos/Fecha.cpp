@@ -37,5 +37,5 @@ Fecha::Fecha(int dia, int mes, int anio){
 Fecha::Fecha() {}
 
 string Fecha::obtenerFecha(string separador) {
-    return to_string(getDia()) + separador + to_string(getMes()) + separador + to_string(getAnio());
+    return to_string(getAnio()) + separador + to_string(getMes()) + separador +  to_string(getDia());
 }
