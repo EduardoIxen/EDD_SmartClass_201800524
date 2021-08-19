@@ -17,7 +17,7 @@ private:
     NodoEstudiante* primero;
     NodoEstudiante* ultimo;
     int tamanio;
-    string dirToString(NodoEstudiante* valor);
+    static string dirToString(NodoEstudiante* valor);
 public:
     ListaDobleEstud();
     void insertar(Estudiante*);

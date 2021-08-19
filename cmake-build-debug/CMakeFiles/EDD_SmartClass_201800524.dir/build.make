@@ -182,6 +182,32 @@ CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.s"
 	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\ReadFile\ReadTareas.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\ReadFile\ReadTareas.cpp.s
 
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj: ../Estructuras/LinealizarMatriz.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\LinealizarMatriz.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\LinealizarMatriz.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\LinealizarMatriz.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\LinealizarMatriz.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\LinealizarMatriz.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\LinealizarMatriz.cpp.s
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj: CMakeFiles/EDD_SmartClass_201800524.dir/flags.make
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj: ../Estructuras/NodoMatrizL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\NodoMatrizL.cpp.obj -c C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\NodoMatrizL.cpp
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.i"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\NodoMatrizL.cpp > CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\NodoMatrizL.cpp.i
+
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.s"
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estructuras\NodoMatrizL.cpp -o CMakeFiles\EDD_SmartClass_201800524.dir\Estructuras\NodoMatrizL.cpp.s
+
 # Object files for target EDD_SmartClass_201800524
 EDD_SmartClass_201800524_OBJECTS = \
 "CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj" \
@@ -192,7 +218,9 @@ EDD_SmartClass_201800524_OBJECTS = \
 "CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj" \
 "CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj" \
 "CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj" \
-"CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj"
+"CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj" \
+"CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj"
 
 # External object files for target EDD_SmartClass_201800524
 EDD_SmartClass_201800524_EXTERNAL_OBJECTS =
@@ -206,11 +234,13 @@ EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Controlado
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj
+EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/build.make
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/linklibs.rsp
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/objects1.rsp
 EDD_SmartClass_201800524.exe: CMakeFiles/EDD_SmartClass_201800524.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable EDD_SmartClass_201800524.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable EDD_SmartClass_201800524.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\EDD_SmartClass_201800524.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

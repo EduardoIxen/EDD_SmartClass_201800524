@@ -6,6 +6,7 @@
 #include "./Objetos/Tarea.h"
 #include "./Objetos/EnumEstado.h"
 #include "./ReadFile/ReadTareas.h"
+#include "./Estructuras/LinealizarMatriz.h"
 
 
 int main() {
@@ -18,7 +19,7 @@ int main() {
     CEstudiante agregarEst;
     //agregarEst.agregarEstudiante(listaEstudiantes); //agregar estudiantes a mano
     //agregarEst.modificarEstudiante(listaEstudiantes, "3423442386382"); //modificar estudiantes de la lista
-    //listaEstudiantes->generarGrafo();
+    listaEstudiantes->generarGrafo();
     //agregarEst.eliminarEstudiante(listaEstudiantes, "7249529279753");
     //cout<<listaEstudiantes->getTamanio()<<endl;
     Tarea* nuevaT = new Tarea(1,201800524, "Tarea 1", "Hacer una edd", "EDD", new Fecha(12,7,2021), 13, Estado::PENDIENTE);
@@ -50,18 +51,38 @@ int main() {
         }
     }*/
 
+    auto* linealizar = new LinealizarMatriz();
+
     ReadTareas cargarT;
     cargarT.readTareas("sin dato", matrizTar ,listaEstudiantes);
-    cout<<"recorrer desde main"<<endl;
     for (int i = 0; i < 9; ++i) {
         for (int j = 0; j < 30; ++j) {
             for (int k = 0; k < 5; ++k) {
+                //i = horas j=dias k = meses   formula row major ( i * TamColum + j ) * TamProf + k
+                int id = (i * 30 + j)*5+k;
                 if(matrizTar[i][j][k] != NULL){
-                    cout<<"no nulo"<<i<<j<<k<<endl;
+                    linealizar->insertar(matrizTar[i][j][k], id);
+                }else{
+                    linealizar->insertar(NULL, id);
                 }
             }
         }
     }
 
+    cout<<"Ya linealizadoooo."<<endl;
+    linealizar->recorrerLista();
+    int dia, mes, hora;
+    cout<<"Ingrese el dia"<<endl;
+    cin >> dia;
+    cin.ignore();
+    cout<<"Ingrese el mes"<<endl;
+    cin >> mes;
+    cin.ignore();
+    cout<<"Ingrese la hora"<<endl;
+    cin >> hora;
+    cin.ignore();
+    linealizar->buscar(mes,dia,hora);
+
+    linealizar->generarGrafo();
     return 0;
 }

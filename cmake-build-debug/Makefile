@@ -152,6 +152,30 @@ Controladores/CEstudiante.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.s
 .PHONY : Controladores/CEstudiante.cpp.s
 
+Estructuras/LinealizarMatriz.obj: Estructuras/LinealizarMatriz.cpp.obj
+.PHONY : Estructuras/LinealizarMatriz.obj
+
+# target to build an object file
+Estructuras/LinealizarMatriz.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj
+.PHONY : Estructuras/LinealizarMatriz.cpp.obj
+
+Estructuras/LinealizarMatriz.i: Estructuras/LinealizarMatriz.cpp.i
+.PHONY : Estructuras/LinealizarMatriz.i
+
+# target to preprocess a source file
+Estructuras/LinealizarMatriz.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.i
+.PHONY : Estructuras/LinealizarMatriz.cpp.i
+
+Estructuras/LinealizarMatriz.s: Estructuras/LinealizarMatriz.cpp.s
+.PHONY : Estructuras/LinealizarMatriz.s
+
+# target to generate assembly for a file
+Estructuras/LinealizarMatriz.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.s
+.PHONY : Estructuras/LinealizarMatriz.cpp.s
+
 Estructuras/ListaDobleEstud.obj: Estructuras/ListaDobleEstud.cpp.obj
 .PHONY : Estructuras/ListaDobleEstud.obj
 
@@ -199,6 +223,30 @@ Estructuras/NodoEstudiante.s: Estructuras/NodoEstudiante.cpp.s
 Estructuras/NodoEstudiante.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.s
 .PHONY : Estructuras/NodoEstudiante.cpp.s
+
+Estructuras/NodoMatrizL.obj: Estructuras/NodoMatrizL.cpp.obj
+.PHONY : Estructuras/NodoMatrizL.obj
+
+# target to build an object file
+Estructuras/NodoMatrizL.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj
+.PHONY : Estructuras/NodoMatrizL.cpp.obj
+
+Estructuras/NodoMatrizL.i: Estructuras/NodoMatrizL.cpp.i
+.PHONY : Estructuras/NodoMatrizL.i
+
+# target to preprocess a source file
+Estructuras/NodoMatrizL.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.i
+.PHONY : Estructuras/NodoMatrizL.cpp.i
+
+Estructuras/NodoMatrizL.s: Estructuras/NodoMatrizL.cpp.s
+.PHONY : Estructuras/NodoMatrizL.s
+
+# target to generate assembly for a file
+Estructuras/NodoMatrizL.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.s
+.PHONY : Estructuras/NodoMatrizL.cpp.s
 
 Objetos/Estudiante.obj: Objetos/Estudiante.cpp.obj
 .PHONY : Objetos/Estudiante.obj
@@ -356,12 +404,18 @@ help:
 	@echo ... Controladores/CEstudiante.obj
 	@echo ... Controladores/CEstudiante.i
 	@echo ... Controladores/CEstudiante.s
+	@echo ... Estructuras/LinealizarMatriz.obj
+	@echo ... Estructuras/LinealizarMatriz.i
+	@echo ... Estructuras/LinealizarMatriz.s
 	@echo ... Estructuras/ListaDobleEstud.obj
 	@echo ... Estructuras/ListaDobleEstud.i
 	@echo ... Estructuras/ListaDobleEstud.s
 	@echo ... Estructuras/NodoEstudiante.obj
 	@echo ... Estructuras/NodoEstudiante.i
 	@echo ... Estructuras/NodoEstudiante.s
+	@echo ... Estructuras/NodoMatrizL.obj
+	@echo ... Estructuras/NodoMatrizL.i
+	@echo ... Estructuras/NodoMatrizL.s
 	@echo ... Objetos/Estudiante.obj
 	@echo ... Objetos/Estudiante.i
 	@echo ... Objetos/Estudiante.s

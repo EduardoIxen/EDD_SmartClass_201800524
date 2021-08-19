@@ -7,6 +7,13 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj: \
  ../Estructuras/ListaDobleEstud.h \
  ../Estructuras/NodoEstudiante.h \
  ../Objetos/Estudiante.h
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj: \
+ ../Estructuras/LinealizarMatriz.cpp \
+ ../Estructuras/LinealizarMatriz.h \
+ ../Estructuras/NodoMatrizL.h \
+ ../Objetos/EnumEstado.h \
+ ../Objetos/Fecha.h \
+ ../Objetos/Tarea.h
 CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj: \
  ../Estructuras/ListaDobleEstud.cpp \
  ../Estructuras/ListaDobleEstud.h \
@@ -16,6 +23,12 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj: \
  ../Estructuras/NodoEstudiante.cpp \
  ../Estructuras/NodoEstudiante.h \
  ../Objetos/Estudiante.h
+CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj: \
+ ../Estructuras/NodoMatrizL.cpp \
+ ../Estructuras/NodoMatrizL.h \
+ ../Objetos/EnumEstado.h \
+ ../Objetos/Fecha.h \
+ ../Objetos/Tarea.h
 CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Estudiante.cpp.obj: \
  ../Objetos/Estudiante.cpp \
  ../Objetos/Estudiante.h
@@ -44,8 +57,10 @@ CMakeFiles/EDD_SmartClass_201800524.dir/ReadFile/ReadTareas.cpp.obj: \
  ../ReadFile/ReadTareas.h
 CMakeFiles/EDD_SmartClass_201800524.dir/main.cpp.obj: \
  ../Controladores/CEstudiante.h \
+ ../Estructuras/LinealizarMatriz.h \
  ../Estructuras/ListaDobleEstud.h \
  ../Estructuras/NodoEstudiante.h \
+ ../Estructuras/NodoMatrizL.h \
  ../Objetos/EnumEstado.h \
  ../Objetos/Estudiante.h \
  ../Objetos/Fecha.h \

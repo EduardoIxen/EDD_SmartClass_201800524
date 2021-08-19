@@ -92,7 +92,7 @@ void ListaDobleEstud::generarGrafo() {
         file_out << acum << endl;
         cout << "La escritura fue un exito."<< endl;
     }
-    string cmd = "dot -Tpng ../Reportes/lsEstudiantes.dot -o ../Reportes/lsEstudiantes.png";
+    string cmd = "dot -T svg ../Reportes/lsEstudiantes.dot -o ../Reportes/lsEstudiantes.svg";
     system(cmd.c_str());
 
 }

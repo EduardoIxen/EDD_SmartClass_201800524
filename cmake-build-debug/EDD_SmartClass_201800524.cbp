@@ -88,6 +88,12 @@
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.h">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.cpp">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.cpp">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
@@ -98,6 +104,12 @@
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoMatrizL.cpp">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoMatrizL.h">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/EnumEstado.h">

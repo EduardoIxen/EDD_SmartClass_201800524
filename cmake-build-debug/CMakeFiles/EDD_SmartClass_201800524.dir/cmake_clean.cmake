@@ -1,7 +1,9 @@
 file(REMOVE_RECURSE
   "CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj"
+  "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoEstudiante.cpp.obj"
+  "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Estudiante.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Fecha.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Tarea.cpp.obj"

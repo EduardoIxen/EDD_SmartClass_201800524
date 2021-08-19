@@ -4,8 +4,9 @@
 
 #ifndef EDD_SMARTCLASS_201800524_FECHA_H
 #define EDD_SMARTCLASS_201800524_FECHA_H
+#include "iostream"
 
-
+using namespace std;
 class Fecha {
 private:
     int dia;
@@ -27,6 +28,8 @@ public:
     int getAnio();
 
     void setAnio(int anio);
+
+    string obtenerFecha(string separador);
 
 };
 
