@@ -1,0 +1,107 @@
+digraph G{
+ rankdir = LR; 
+node [shape=box]; 
+compound=true; 
+"0x1297280"[label=" Carnet: 201700886
+DPI: 3502451230508
+Nombre: Emilia Miramontes
+Carrera: Ingeniería en Ciencias y Sistemas
+Correo: nicols36@hotmail.com
+Pass: roxodiciqi
+Creditos: 205
+Edad: 21
+"];
+"0x12904b0"[label=" Carnet: 201501786
+DPI: 7249529279753
+Nombre: Tomas ixen
+Carrera: Ingeniería Industrial
+Correo: jernimo.caballero@yahoo.com
+Pass: zanolexima
+Creditos: 245
+Edad: 24
+"];
+"0x1297438"[label=" Carnet: 201822186
+DPI: 9298434863898
+Nombre: Eloisa Rincón
+Carrera: Ingeniería Civil
+Correo: carolinaelizondo85@yahoo.com
+Pass: toqelijanu
+Creditos: 95
+Edad: 19
+"];
+"0x12904d0"[label=" Carnet: 201901425
+DPI: 4131766125532
+Nombre: Bernardo Hinojosa
+Carrera: Ingeniería Mecánica
+Correo: alfonso03@hotmail.com
+Pass: wosopumano
+Creditos: 100
+Edad: 20
+"];
+"0x12976e8"[label=" Carnet: 201503186
+DPI: 8549191766348
+Nombre: Manuel Manzanares
+Carrera: Ingeniería Eléctrica
+Correo: benitoarmas92@gmail.com
+Pass: rejumudore
+Creditos: 226
+Edad: 24
+"];
+"0x1297570"[label=" Carnet: 201123146
+DPI: 9616636196552
+Nombre: Julia Corona
+Carrera: Ingeniería Electrónica
+Correo: ngela.solorio86@yahoo.com
+Pass: xojobavuji
+Creditos: 237
+Edad: 26
+"];
+"0x1297590"[label=" Carnet: 201704186
+DPI: 4778315315575
+Nombre: Berta Carrasco
+Carrera: Ingeniería Ambiental
+Correo: carmen.montenegro@yahoo.com
+Pass: gayahizatu
+Creditos: 210
+Edad: 22
+"];
+"0x129b548"[label=" Carnet: 202000786
+DPI: 7382344774121
+Nombre: Lola Delapaz
+Carrera: Ingeniería Química
+Correo: adriana56@gmail.com
+Pass: hujocikimi
+Creditos: 45
+Edad: 19
+"];
+"0x129b5a8"[label=" Carnet: 201611446
+DPI: 2511893949443
+Nombre: Sonia Arteaga
+Carrera: Ingeniería Mecánica Industrial
+Correo: esperanza.meza41@hotmail.com
+Pass: rezutafila
+Creditos: 195
+Edad: 23
+"];
+"0x129b7e8"[label="Carnet: 201819852
+DPI: 3423442386382
+Nombre: Benjamín Asencio
+Carrera: Ingeniería Mecánica Eléctrica
+Correo: horacio.tejada15@yahoo.com
+Pass: runoqozepo
+Creditos: 117
+Edad: 20
+"];
+"0x1297280" -> "0x12904b0" [dir="both"];
+"0x12904b0" -> "0x1297438" [dir="both"];
+"0x1297438" -> "0x12904d0" [dir="both"];
+"0x12904d0" -> "0x12976e8" [dir="both"];
+"0x12976e8" -> "0x1297570" [dir="both"];
+"0x1297570" -> "0x1297590" [dir="both"];
+"0x1297590" -> "0x129b548" [dir="both"];
+"0x129b548" -> "0x129b5a8" [dir="both"];
+"0x129b5a8" -> "0x129b7e8" [dir="both"];
+"0x129b7e8" -> "0x1297280"[dir="both"];
+
+}
+

@@ -7,8 +7,7 @@
 void ReadCsv::readEstudiantes(string _path, ListaDobleEstud *&listaDobleEst, ColaDeError*& colaDeError) {
     string carnet, dpi, nombre, carrera, correo, passw, creditos, edad;
     int numeroLinea = 1;
-    //_path = R"(C:\Users\tomas\OneDrive\Documents\201800524\2021\Segundo semestre\EDD\Laboratorio\EDD_SmartClass_201800524\Estudiantes2.csv)";
-    _path = R"(C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estudiantes.csv)";
+    //_path = R"(C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Estudiantes.csv)";
 
     string linea;
     char delimitador = ',';
@@ -16,8 +15,8 @@ void ReadCsv::readEstudiantes(string _path, ListaDobleEstud *&listaDobleEst, Col
     ifstream archivo(_path);
 
     if (archivo.fail()) {
-        cout << "No se pudo abrir el archivo de tareas." << endl;
-        exit(1);
+        cout << "ERROR// OCURRIO UN ERROR AL ABRIR EL ARCHIVO." << endl;
+        return;
     }
     getline(archivo, linea);
     while (getline(archivo, linea)) {
@@ -39,7 +38,7 @@ void ReadCsv::readEstudiantes(string _path, ListaDobleEstud *&listaDobleEst, Col
         listaDobleEst->insertar(nuevoEstudiante);
     }
     archivo.close();
-
+    cout<<"----Estudiantes cargados, errores encontrodos: "<<colaDeError->getTamanio()<<"----"<<endl;
 }
 
 void ReadCsv::validarDatos(string carnet, string dpi, string correo, ColaDeError*& colaDeError, int numeroLinea) {

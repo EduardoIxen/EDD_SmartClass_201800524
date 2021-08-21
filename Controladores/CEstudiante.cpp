@@ -51,8 +51,8 @@ void CEstudiante::agregarEstudiante(ListaDobleEstud *&lista) {
     nuevoEst->setPass(pass);
     nuevoEst->setCreditos(stoi(creditos));
     nuevoEst->setEdad(stoi(edad));
-
     lista->insertar(nuevoEst);
+    cout<<"----Estudiante: "<<nombre << " ("<<carnet<<") "<<"agregado correctamente----"<<endl;
 }
 
 void CEstudiante::modificarEstudiante(ListaDobleEstud *&lista, string dpi) {
@@ -65,7 +65,7 @@ void CEstudiante::modificarEstudiante(ListaDobleEstud *&lista, string dpi) {
     NodoEstudiante *aux = lista->getPrimero();
     while (aux->getSiguiente() != lista->getPrimero()) {
         if (aux->getEstudiante()->getDpi() == _dpi) {
-            cambioDeDatos(*&aux);
+            cambioDeDatos(*&aux); //lleva al formulario de cambio de datos
             return;
         }
         aux = aux->getSiguiente();
@@ -210,6 +210,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     cin.ignore();
                 } while (!validarCarnet(carnet));
                 nodo->getEstudiante()->setCarnet(stoi(carnet));
+                cout<<"----Carnet modificado correctamente---- "<<endl;
                 break;
             case 2:
                 cout << "Dato actual: " << nodo->getEstudiante()->getDpi() << endl;
@@ -219,6 +220,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     cin.ignore(); //limpiar buffer de datos
                 } while (!validarDpi(dpi) && !dpi.empty());
                 nodo->getEstudiante()->setDpi(stoll(dpi, nullptr, 10));
+                cout<<"----Dpi modificado correctamente---- "<<endl;
                 break;
             case 3:
                 cout << "Dato actual: " << nodo->getEstudiante()->getNombre() << endl;
@@ -227,6 +229,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     getline(cin, nombre);
                 } while (nombre.empty());
                 nodo->getEstudiante()->setNombre(nombre);
+                cout<<"----Nombre modificado correctamente---- "<<endl;
                 break;
             case 4:
                 cout << "Dato actual: " << nodo->getEstudiante()->getCarrera() << endl;
@@ -235,6 +238,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     getline(cin, carrera);
                 } while (carrera.empty());
                 nodo->getEstudiante()->setCarrera(carrera);
+                cout<<"----Carrera modificada correctamente---- "<<endl;
                 break;
             case 5:
                 cout << "Dato actual: " << nodo->getEstudiante()->getCorreo() << endl;
@@ -243,6 +247,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     getline(cin, correo);
                 } while (!validarCorreo(correo));
                 nodo->getEstudiante()->setCorreo(correo);
+                cout<<"----Correo modificado correctamente---- "<<endl;
                 break;
             case 6:
                 cout << "Dato actual: " << nodo->getEstudiante()->getPass() << endl;
@@ -252,6 +257,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     cin.ignore();
                 } while (pass.empty());
                 nodo->getEstudiante()->setPass(pass);
+                cout<<"----Contrasenia modificada correctamente---- "<<endl;
                 break;
             case 7:
                 do {
@@ -260,6 +266,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     cin.ignore();
                 } while (!verificarNumero(creditos));
                 nodo->getEstudiante()->setCreditos(stoi(creditos));
+                cout<<"----Creditos modificado correctamente---- "<<endl;
                 break;
             case 8:
                 do {
@@ -267,6 +274,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     getline(cin, edad);
                 } while (!verificarNumero(edad));
                 nodo->getEstudiante()->setEdad(stoi(edad));
+                cout<<"----Edad modificada correctamente---- "<<endl;
                 break;
             case 9:
                 break;

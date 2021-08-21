@@ -52,6 +52,7 @@ void ListaDobleEstud::generarGrafo() {
     string acum = "digraph G{\n rankdir = LR; \nnode [shape=box]; \ncompound=true; \n";
     string nodo = "";
     string enlace = "";
+    string nombreArch = obtenerFechaHora();
 
     NodoEstudiante* aux = this->getPrimero();
     while (aux->getSiguiente() != this->getPrimero()){
@@ -82,7 +83,8 @@ void ListaDobleEstud::generarGrafo() {
     enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\"[dir=\"both\"];\n";
     acum += nodo + enlace + "\n}\n";
 
-    string filename("../Reportes/lsEstudiantes.dot");
+
+    string filename("../Reportes/lsEstudiantes"+nombreArch+".dot");
     fstream file_out;
 
     file_out.open(filename, std::ios_base::out);
@@ -90,9 +92,9 @@ void ListaDobleEstud::generarGrafo() {
         cout<<"Error al abrit el archivo"<<filename<<endl;
     }else{
         file_out << acum << endl;
-        cout << "La escritura fue un exito."<< endl;
+        cout << "----REPORTE GENERADO EXITOSAMENTE----"<< endl;
     }
-    string cmd = "dot -T svg ../Reportes/lsEstudiantes.dot -o ../Reportes/lsEstudiantes.svg";
+    string cmd = "dot -T svg ../Reportes/lsEstudiantes"+nombreArch+".dot -o ../Reportes/lsEstudiantes"+nombreArch+".svg";
     system(cmd.c_str());
 
 }
@@ -142,4 +144,23 @@ NodoEstudiante* ListaDobleEstud::getUltimo() {
 
 void ListaDobleEstud::setTamanio(int _tamanio) {
     this->tamanio = _tamanio;
+}
+
+string ListaDobleEstud::obtenerFechaHora(){
+    time_t rawtime;
+    struct tm * timeContext;
+
+    stringstream textStream;
+
+    time(&rawtime);
+
+    timeContext = localtime(&rawtime);
+
+    textStream << asctime(timeContext);
+
+    string seg = to_string(timeContext->tm_sec);
+    string min = to_string(timeContext->tm_min);
+    string hor = to_string(timeContext->tm_hour);
+
+    return hor+"_"+min+"_"+seg;
 }

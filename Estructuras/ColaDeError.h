@@ -7,6 +7,8 @@
 #include <sstream>
 #include "fstream"
 #include "iostream"
+#include "iomanip"
+#include <chrono>
 #include "NodoError.h"
 
 class ColaDeError {
@@ -15,6 +17,7 @@ private:
     NodoError* ultimo;
     int tamanio;
     string dirToString(NodoError*);
+    string obtenerFechaHora();
 public:
     ColaDeError();
     void setPrimero(NodoError*);

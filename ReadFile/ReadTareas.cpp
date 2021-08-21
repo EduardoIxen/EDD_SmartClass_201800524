@@ -9,7 +9,7 @@ void ReadTareas::readTareas(string path, Tarea *(&matrizTar)[9][30][5], ListaDob
     char delimitador = ',';
     int id = 0;
     int numLinea = 1;
-    path = R"(C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Tareas.csv)";
+    //path = R"(C:\Users\tomas\CLionProjects\EDD_SmartClass_201800524\Tareas.csv)";
 
     ifstream archivo(path); //obtener el contenido del archivo
 
@@ -44,6 +44,7 @@ void ReadTareas::readTareas(string path, Tarea *(&matrizTar)[9][30][5], ListaDob
         }
     }
     archivo.close();
+    cout<<"----Tareas cargadas, errores encontrodos: "<<colaDeError->getTamanio()<<"----"<<endl;
 }
 
 bool
@@ -51,7 +52,7 @@ ReadTareas::validarDatos(string carnet, string fecha, string hora, string dia, s
     bool existeCarnet = listaEst->buscarEstudiante(carnet);
     bool fechaValida = validarFecha(fecha);
     bool encabezadoValido = validarEncabezado(mes, dia, hora);
-    string descripcion = "Linea numero"+ to_string(numLinea)+"\n";
+    string descripcion = "Linea numero: "+ to_string(numLinea)+"\n";
 
     if (existeCarnet && fechaValida && encabezadoValido) return true;
 

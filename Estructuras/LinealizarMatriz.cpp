@@ -122,12 +122,15 @@ void LinealizarMatriz::buscar(int mes, int dia, int hora) {
     while (aux->getSiguiente() != this->getPrimero()){
         if (aux->getId() == id){
             if (aux->getTarea() != NULL){
-                std::cout<<"id nodo: "<<aux->getId()<< std::endl;
-                std::cout<<"carner"<<aux->getTarea()->getCarnet()<< std::endl;
-                std::cout<<"id tarea"<<aux->getTarea()->getId()<< std::endl;
+                std::cout<<"\tCarnet: "<<aux->getTarea()->getCarnet()<< std::endl;
+                std::cout<<"\tNombre: "<<aux->getTarea()->getNombre()<< std::endl;
+                std::cout<<"\tDescripcion: "<<aux->getTarea()->getDescripcion()<< std::endl;
+                std::cout<<"\tMateria: "<<aux->getTarea()->getMateria()<< std::endl;
+                std::cout<<"\tFecha: "<<aux->getTarea()->getFecha()->obtenerFecha("/")<< std::endl;
+                std::cout<<"\tHora: "<<aux->getTarea()->getHora()<< std::endl<<endl;
                 return;
             }else{
-                std::cout<<"NO SE ENCONTRARON TAREAS EL: "<<dia<<"/"<<mes<<" A LAS "<<hora<< " HORAS."<<std::endl;
+                std::cout<<"NO SE ENCONTRARON TAREAS EL: "<<dia<<"/"<<mes<<" A LAS "<<hora<< " HORAS."<<std::endl<<endl;
                 return;
             }
         }
@@ -155,6 +158,7 @@ void LinealizarMatriz::generarGrafo() {
     string acum = "digraph G{\n rankdir = LR; \nnode [shape=box]; \ncompound=true; \n";
     string nodo = "";
     string enlace = "";
+    string nombreArch = obtenerFechaHora();
 
     NodoMatrizL* aux = this->getPrimero();
     while (aux->getSiguiente() != this->getPrimero()){
@@ -188,16 +192,16 @@ void LinealizarMatriz::generarGrafo() {
                 +"Hora: " + to_string(aux->getTarea()->getHora()) + "\n"
                 + "Estado: "+ obtenerEstado(aux->getTarea()->getEstado()) + "\n"
                 +"\"];\n";
-        enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
+        //enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
     }else{
         nodo += "\"" + dirToString(&*aux) + "\"" + "[label=\" Posicion: " + to_string(aux->getId()) + "\n"
                 +"NULL" + "\n"
                 +"\"];\n";
-        enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
+        //enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
     }
     acum += nodo + enlace + "\n}\n";
 
-    string filename("../Reportes/lsTareas.dot");
+    string filename("../Reportes/lsTareas"+nombreArch+".dot");
     fstream file_out;
 
     file_out.open(filename, std::ios_base::out);
@@ -205,9 +209,9 @@ void LinealizarMatriz::generarGrafo() {
         cout<<"Error al abrit el archivo"<<filename<<endl;
     }else{
         file_out << acum << endl;
-        cout << "La escritura fue un exito."<< endl;
+        cout << "REPORTE GENERADO EXITOSAMENTE."<< endl;
     }
-    string cmd = "dot -T svg ../Reportes/lsTareas.dot -o ../Reportes/lsTareas.svg";
+    string cmd = "dot -T svg ../Reportes/lsTareas"+nombreArch+".dot -o ../Reportes/lsTareas"+nombreArch+".svg";
     system(cmd.c_str());
 
 }
@@ -227,4 +231,23 @@ string LinealizarMatriz::obtenerEstado(Estado estado){
         return "Incumplido";
     }
     return "Inexistente";
+}
+
+string LinealizarMatriz::obtenerFechaHora(){
+    time_t rawtime;
+    struct tm * timeContext;
+
+    stringstream textStream;
+
+    time(&rawtime);
+
+    timeContext = localtime(&rawtime);
+
+    textStream << asctime(timeContext);
+
+    string seg = to_string(timeContext->tm_sec);
+    string min = to_string(timeContext->tm_min);
+    string hor = to_string(timeContext->tm_hour);
+
+    return hor+"_"+min+"_"+seg;
 }

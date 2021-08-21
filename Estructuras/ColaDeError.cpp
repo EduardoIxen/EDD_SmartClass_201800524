@@ -68,6 +68,7 @@ void ColaDeError::generarGrafo() {
     string acum = "digraph G{\n rankdir = LR; \nnode [shape=box]; \ncompound=true; \n";
     string nodo = "";
     string enlace = "";
+    string nombreArch = obtenerFechaHora();
 
     NodoError* aux = getPrimero();
     nodo += R"("Inicio de la cola" -> ")"+ dirToString(&*getPrimero())+"\" [dir=\"back\"];\n";
@@ -90,7 +91,7 @@ void ColaDeError::generarGrafo() {
 
     acum += nodo + enlace + "\n}\n";
 
-    string filename("../Reportes/ColaError.dot");
+    string filename("../Reportes/ColaError"+nombreArch+".dot");
     fstream file_out;
 
     file_out.open(filename, std::ios_base::out);
@@ -100,7 +101,7 @@ void ColaDeError::generarGrafo() {
         file_out << acum << endl;
         cout << "La escritura fue un exito."<< endl;
     }
-    string cmd = "dot -T svg ../Reportes/ColaError.dot -o ../Reportes/ColaError.svg";
+    string cmd = "dot -T svg ../Reportes/ColaError"+nombreArch+".dot -o ../Reportes/ColaError"+nombreArch+".svg";
     system(cmd.c_str());
 }
 
@@ -108,4 +109,20 @@ string ColaDeError::dirToString(NodoError *valor) {
     stringstream ss;
     ss << &*valor;
     return ss.str();
+}
+
+string ColaDeError::obtenerFechaHora(){
+    time_t rawtime;
+    struct tm * timeContext;
+
+    string temp;
+    stringstream textStream;
+
+    time(&rawtime);
+
+    timeContext = localtime(&rawtime);
+
+    textStream << asctime(timeContext);
+    temp = textStream.str();
+    return temp;
 }

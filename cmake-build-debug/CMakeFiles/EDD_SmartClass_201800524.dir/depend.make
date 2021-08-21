@@ -51,8 +51,23 @@ CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/NodoMatrizL.cpp.obj: \
  ../Objetos/Fecha.h \
  ../Objetos/Tarea.h
 CMakeFiles/EDD_SmartClass_201800524.dir/Menu/Menu.cpp.obj: \
+ ../Controladores/CEstudiante.h \
+ ../Controladores/CTarea.h \
+ ../Estructuras/ColaDeError.h \
+ ../Estructuras/LinealizarMatriz.h \
+ ../Estructuras/ListaDobleEstud.h \
+ ../Estructuras/NodoError.h \
+ ../Estructuras/NodoEstudiante.h \
+ ../Estructuras/NodoMatrizL.h \
  ../Menu/Menu.cpp \
- ../Menu/Menu.h
+ ../Menu/Menu.h \
+ ../Objetos/EnumEstado.h \
+ ../Objetos/Error.h \
+ ../Objetos/Estudiante.h \
+ ../Objetos/Fecha.h \
+ ../Objetos/Tarea.h \
+ ../ReadFile/ReadCsv.h \
+ ../ReadFile/ReadTareas.h
 CMakeFiles/EDD_SmartClass_201800524.dir/Objetos/Error.cpp.obj: \
  ../Objetos/Error.cpp \
  ../Objetos/Error.h

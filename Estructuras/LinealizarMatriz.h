@@ -8,6 +8,7 @@
 #include "iostream"
 #include "sstream"
 #include "fstream"
+#include <chrono> //obtener hora
 #include "NodoMatrizL.h"
 
 class LinealizarMatriz {
@@ -17,6 +18,7 @@ private:
     int tamanio;
     string dirToString(NodoMatrizL*);
     string obtenerEstado(Estado);
+    string obtenerFechaHora();
 public:
     LinealizarMatriz();
     void insertar(Tarea* , int);

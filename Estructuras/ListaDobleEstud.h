@@ -8,16 +8,18 @@
 #include "iostream"
 #include "sstream"
 #include "fstream"
+#include <chrono>
 #include "NodoEstudiante.h"
 #include "../Objetos/Estudiante.h"
 
-//using namespace std;
+using namespace std;
 class ListaDobleEstud {
 private:
     NodoEstudiante* primero;
     NodoEstudiante* ultimo;
     int tamanio;
     static string dirToString(NodoEstudiante* valor);
+    string obtenerFechaHora();
 public:
     ListaDobleEstud();
     void insertar(Estudiante*);
