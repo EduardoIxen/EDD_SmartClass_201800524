@@ -6,9 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.cpp
-Salida.h
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.h
+regex
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/regex
+../Estructuras/ListaDobleEstud.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
+../Estructuras/NodoEstudiante.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CTarea.h
+../Estructuras/LinealizarMatriz.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.h
+CEstudiante.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.h
 
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.h
 ../Estructuras/ListaDobleEstud.h
@@ -19,6 +29,20 @@ string
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/string
 iostream
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/iostream
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ColaDeError.h
+sstream
+-
+fstream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/fstream
+iostream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/iostream
+iomanip
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/iomanip
+chrono
+-
+NodoError.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoError.h
 
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.h
 iostream
@@ -46,6 +70,10 @@ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante
 ../Objetos/Estudiante.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
 
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoError.h
+../Objetos/Error.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Error.h
+
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h
 ../Objetos/Estudiante.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
@@ -56,7 +84,39 @@ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/stdlib.h
 ../Objetos/Tarea.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Tarea.h
 
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Menu/Menu.cpp
+Menu.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Menu/Menu.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Menu/Menu.h
+iostream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Menu/iostream
+string
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Menu/string
+../Estructuras/ListaDobleEstud.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
+../Estructuras/ColaDeError.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ColaDeError.h
+../ReadFile/ReadCsv.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.h
+../ReadFile/ReadTareas.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadTareas.h
+../Objetos/Tarea.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Tarea.h
+../Estructuras/LinealizarMatriz.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.h
+../Controladores/CEstudiante.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.h
+../Controladores/CTarea.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CTarea.h
+../Controladores/Salida.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.h
+
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/EnumEstado.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Error.h
+iostream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/iostream
 
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
 iostream
@@ -73,4 +133,36 @@ Fecha.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Fecha.h
 EnumEstado.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/EnumEstado.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadCsv.h
+iostream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/iostream
+fstream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/fstream
+sstream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/sstream
+regex
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/regex
+../Objetos/Estudiante.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
+../Estructuras/ListaDobleEstud.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
+../Estructuras/ColaDeError.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ColaDeError.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/ReadTareas.h
+iostream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/iostream
+fstream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/fstream
+sstream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/sstream
+bits/stdc++.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/ReadFile/bits/stdc++.h
+../Estructuras/ListaDobleEstud.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
+../Objetos/Tarea.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Tarea.h
+../Estructuras/ColaDeError.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ColaDeError.h
 

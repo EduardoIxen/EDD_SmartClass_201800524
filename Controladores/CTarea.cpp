@@ -79,17 +79,7 @@ void CTarea::agregarTarea(LinealizarMatriz *& listaTareas) {
 void CTarea::modificarTarea(LinealizarMatriz *& listaTareas, int indice) {
     auto* aux = listaTareas->getPrimero();
 
-    if (listaTareas->getUltimo()->getId() == indice){
-        if (aux->getTarea() != NULL){
-            cambioDeDatos(*&aux, listaTareas);
-            return;
-        }else{
-            cout<<"----NO SE ENCUENTRAN TAREAS EN LA POSICION INGRESADA----"<<endl;
-            return;
-        }
-    }
-
-    while (aux->getSiguiente() != listaTareas->getPrimero()){
+    while (aux != NULL){ //dejar el ciclo cuando llegue al final con sig = null
         if (aux->getId() == indice){
             if (aux->getTarea() != NULL){
                 cambioDeDatos(*&aux, listaTareas);
@@ -109,30 +99,7 @@ void CTarea::eliminarTarea(LinealizarMatriz *& listaTareas, int indice) {
     auto* aux = listaTareas->getPrimero();
     int confirmar = 0;
 
-    if (listaTareas->getUltimo()->getId() == indice){
-        if (aux->getTarea() != NULL){
-            do{
-                cout<<"---- ESTA SEGURO DE QUE DESEA ELIMINAR LA TAREA? ----"<<endl;
-                cout<<"1) Si"<<endl;
-                cout<<"2) No"<<endl;
-                cin >> confirmar;
-                cin.ignore();
-                if (confirmar == 1){
-                    aux->setTarea(NULL);
-                    cout<<"--------------------- TAREA ELIMINADA -----------------"<<endl;
-                    return;
-                }else if (confirmar == 2){
-                    cout<<"------------------- NO SE ELIMINO LA TAREA -------------"<<endl;
-                    return;
-                }
-            } while (true);
-        }else{
-            cout<<"----NO SE ENCUENTRAN TAREAS EN LA POSICION INGRESADA----"<<endl;
-            return;
-        }
-    }
-
-    while (aux->getSiguiente() != listaTareas->getPrimero()){
+    while (aux != NULL){ //dejar el ciclo cuando llegue al final con sig = null
         if (aux->getId() == indice){
             if (aux->getTarea() != NULL){
                 do{
@@ -262,6 +229,7 @@ void CTarea::cambioDeDatos(NodoMatrizL *& nodo, LinealizarMatriz*& listaTareas) 
         cout << "6) Modificar hora" << endl;
         cout << "7) Modificar estado" << endl;
         cout << "8) Salir." << endl;
+        cout << ">>";
         cin >> op;
         cin.ignore();
         opcion = stoi(op);

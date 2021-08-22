@@ -30,7 +30,7 @@ void Salida::generarTxt(ListaDobleEstud *& listaEst, LinealizarMatriz *& listaTa
             +"\t¿$element? \n";
 
     NodoMatrizL* auxTar = listaTar->getPrimero();
-    while (auxTar != listaTar->getUltimo() && listaTar->getTamanio() > 0){
+    while (auxTar != NULL && listaTar->getTamanio() > 0){
         if(auxTar->getTarea() != NULL){
             contenido += "\t" + string ("¿element type=\"task\"?") + "\n"
                     +"\t\t¿item Carnet = "+ to_string(auxTar->getTarea()->getCarnet())+" $?" + "\n"
@@ -44,7 +44,7 @@ void Salida::generarTxt(ListaDobleEstud *& listaEst, LinealizarMatriz *& listaTa
         }
         auxTar = auxTar->getSiguiente();
     }
-    if(auxTar->getTarea() != NULL){
+    /*if(auxTar->getTarea() != NULL){
         contenido += "\t" + string ("¿element type=\"task\"?") + "\n"
                 +"\t\t¿item Carnet = "+ to_string(auxTar->getTarea()->getCarnet())+" $?" + "\n"
                 +"\t\t¿item Nombre = \""+auxTar->getTarea()->getNombre()+"\" $?" + "\n"
@@ -54,7 +54,7 @@ void Salida::generarTxt(ListaDobleEstud *& listaEst, LinealizarMatriz *& listaTa
                 +"\t\t¿item Hora = \""+ to_string(auxTar->getTarea()->getHora())+":00\" $?" + "\n"
                 +"\t\t¿item Estado = \""+ obtenerEstado(auxTar->getTarea()->getEstado()) +"\" $?" + "\n"
                 +"\t¿$element? \n";
-    }
+    }*/
 
     contenido += "¿$Elements?";
 

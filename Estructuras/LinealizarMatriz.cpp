@@ -40,24 +40,19 @@ void LinealizarMatriz::insertar(Tarea* _valor, int _id) {
         this->primero = nuevoNodo;
         this->ultimo = nuevoNodo;
         this->tamanio++;
-        //nuevoNodo->setId(this->tamanio);
     }else{
-        nuevoNodo->setSiguiente(this->primero);
-        this->primero->setAnterior(nuevoNodo);
-
         nuevoNodo->setAnterior(this->ultimo);
         this->ultimo->setSiguiente(nuevoNodo);
 
         this->ultimo = nuevoNodo;
         this->tamanio++;
-        //nuevoNodo->setId(this->tamanio);
     }
 
 }
 
 bool LinealizarMatriz::insertarManual(Tarea * nuevaTarea, int posicion) {
     NodoMatrizL* aux = this->primero;
-    while (aux->getSiguiente() != this->getPrimero()){
+    while (aux != NULL){
         if (aux->getId() == posicion){
             if (aux->getTarea() == NULL){
                 aux->setTarea(nuevaTarea);
@@ -70,16 +65,6 @@ bool LinealizarMatriz::insertarManual(Tarea * nuevaTarea, int posicion) {
         }
         aux = aux->getSiguiente();
     }
-    if (aux->getId() == posicion){
-        if (aux->getTarea() == NULL){
-            aux->setTarea(nuevaTarea);
-            cout<<"----TAREA INSERTADA CORRECTAMENTE----"<<endl;
-            return true;
-        }else{
-            cout<<"----POSICION OCUPADA POR OTRA TAREA, NO SE INSERTO----"<<endl;
-            return false;
-        }
-    }
     cout<<"----NO SE INSERTO LA TAREA: VERIFIQUE LA FECHA Y HORA----"<<endl;
     return false;
 }
@@ -90,7 +75,7 @@ void LinealizarMatriz::recorrerLista() {
         return;
     }
     NodoMatrizL* aux = this->primero;
-    while (aux->getSiguiente() != this->getPrimero()){
+    while (aux != NULL){
         if (aux->getTarea() != NULL){
             std::cout<<"id nodo: "<<aux->getId()<< std::endl;
             //std::cout<<"carner"<<aux->getTarea()->getCarnet()<< std::endl;
@@ -98,12 +83,6 @@ void LinealizarMatriz::recorrerLista() {
             std::cout<<"es nuul: "<<aux->getId()<< std::endl;
         }
         aux = aux->getSiguiente();
-    }
-    if (aux->getTarea() != NULL){
-        std::cout<<"id nodo: "<<aux->getId()<< std::endl;
-        //std::cout<<"carner"<<aux->getTarea()->getCarnet()<< std::endl;
-    }else{
-        std::cout<<"es nuul: "<<aux->getId()<< std::endl;
     }
 
 }
@@ -119,7 +98,7 @@ void LinealizarMatriz::buscar(int mes, int dia, int hora) {
         return;
     }
     NodoMatrizL* aux = this->primero;
-    while (aux->getSiguiente() != this->getPrimero()){
+    while (aux != NULL){
         if (aux->getId() == id){
             if (aux->getTarea() != NULL){
                 std::cout<<"\tCarnet: "<<aux->getTarea()->getCarnet()<< std::endl;
@@ -136,17 +115,6 @@ void LinealizarMatriz::buscar(int mes, int dia, int hora) {
         }
         aux = aux->getSiguiente();
     }
-    if (aux->getId() == id){
-        if (aux->getTarea() != NULL){
-            std::cout<<"id nodo: "<<aux->getId()<< std::endl;
-            std::cout<<"carner"<<aux->getTarea()->getCarnet()<< std::endl;
-            std::cout<<"id tarea"<<aux->getTarea()->getId()<< std::endl;
-            return;
-        } else{
-            std::cout<<"NO SE ENCONTRARON TAREAS EL: "<<dia<<"/"<<mes<<" A LAS "<<hora<< " HORAS."<<std::endl;
-            return;
-        }
-    }
     std::cout<<"NO SE ENCONTRARON TAREAS EL: "<<dia<<"/"<<mes<<" A LAS "<<hora<< " HORAS."<<std::endl;
 }
 
@@ -161,7 +129,7 @@ void LinealizarMatriz::generarGrafo() {
     string nombreArch = obtenerFechaHora();
 
     NodoMatrizL* aux = this->getPrimero();
-    while (aux->getSiguiente() != this->getPrimero()){
+    while (aux != NULL){
         string hex = dirToString(&*aux);
         if (aux->getTarea() != NULL){
             nodo += "\"" +hex + "\"" + "[label=\" Posicion: " + to_string(aux->getId()) + "\n"
@@ -173,32 +141,20 @@ void LinealizarMatriz::generarGrafo() {
                     +"Hora: " + to_string(aux->getTarea()->getHora()) + "\n"
                     + "Estado: "+ obtenerEstado(aux->getTarea()->getEstado()) + "\n"
                     +"\"];\n";
-            enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
+            if(aux->getSiguiente() != NULL){
+                enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
+            }
         }else{
             nodo += "\"" +hex + "\"" + "[label=\" Posicion: " + to_string(aux->getId()) + "\n"
                     +"NULL" + "\n"
                     +"\"];\n";
-            enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
+            if(aux->getSiguiente() != NULL){
+                enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
+            }
         }
         aux = aux->getSiguiente();
     }
-    if (aux->getTarea() != NULL){
-        nodo += "\"" + dirToString(&*aux) + "\"" + "[label=\" Posicion: " + to_string(aux->getId()) + "\n"
-                +"Carnet: " + to_string(aux->getTarea()->getCarnet()) + "\n"
-                +"Nombre: " + aux->getTarea()->getNombre() + "\n"
-                +"Descripcion: "+ aux->getTarea()->getDescripcion() + "\n"
-                +"Materia: "+ aux->getTarea()->getMateria() + "\n"
-                +"Fecha: "+ aux->getTarea()->getFecha()->obtenerFecha("/") + "\n"
-                +"Hora: " + to_string(aux->getTarea()->getHora()) + "\n"
-                + "Estado: "+ obtenerEstado(aux->getTarea()->getEstado()) + "\n"
-                +"\"];\n";
-        //enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
-    }else{
-        nodo += "\"" + dirToString(&*aux) + "\"" + "[label=\" Posicion: " + to_string(aux->getId()) + "\n"
-                +"NULL" + "\n"
-                +"\"];\n";
-        //enlace += "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"both\"];\n";
-    }
+
     acum += nodo + enlace + "\n}\n";
 
     string filename("../Reportes/lsTareas"+nombreArch+".dot");
@@ -209,7 +165,7 @@ void LinealizarMatriz::generarGrafo() {
         cout<<"Error al abrit el archivo"<<filename<<endl;
     }else{
         file_out << acum << endl;
-        cout << "REPORTE GENERADO EXITOSAMENTE."<< endl;
+        cout << "----REPORTE GENERADO EXITOSAMENTE.----"<< endl;
     }
     string cmd = "dot -T svg ../Reportes/lsTareas"+nombreArch+".dot -o ../Reportes/lsTareas"+nombreArch+".svg";
     system(cmd.c_str());

@@ -34,6 +34,7 @@ private:
 
     void menuIngresoManual();
     void menuReportes();
+    bool validarBusqueda(string, string, string);
 public:
     Menu();
     void menuPrincipal();
