@@ -35,8 +35,6 @@ void Menu::menuPrincipal() {
             listaEstudiantes = new ListaDobleEstud();
             nuevaCola = new ColaDeError();
             cargarEstudiantes.readEstudiantes(path, listaEstudiantes, nuevaCola);
-            //listaEstudiantes->recorrerLista();
-            //listaEstudiantes->generarGrafo();
         }else if (opcion == "2"){
             cout << "****************** CARGA DE TAREAS ******************" << endl;
             cout << "Ingrese la ruta del archivo." << endl;
@@ -168,10 +166,14 @@ void Menu::menuReportes() {
         if(opcionSubmenu == "1"){
             if(nuevaCola->getTamanio() == 0){
                 listaEstudiantes->generarGrafo();
+            }else{
+                cout<< "----ERROR// NO SE PUEDE GENERAR EL REPORTE POR ERRORES ALMACENADOS EN LA COLA----"<<endl;
             }
         }else if(opcionSubmenu == "2"){
             if(nuevaCola->getTamanio() == 0){
                 matrizLinealizada->generarGrafo();
+            }else{
+                cout<< "----ERROR// NO SE PUEDE GENERAR EL REPORTE POR ERRORES ALMACENADOS EN LA COLA----"<<endl;
             }
         }else if(opcionSubmenu == "3"){
             cout<<"************************* BUSQUEDA EN DE TAREAS ********************"<<endl;
@@ -212,7 +214,8 @@ void Menu::menuReportes() {
         }else if(opcionSubmenu == "5"){
             nuevaCola->generarGrafo();
         }else if(opcionSubmenu == "6"){
-            cout<<"Crear archivo faltante"<<endl;
+            Salida nuevaSalida;
+            nuevaSalida.generarTxt(listaEstudiantes, matrizLinealizada);
         }
         else if(opcionSubmenu == "7"){
             cout<<"<- Regreso"<<endl;

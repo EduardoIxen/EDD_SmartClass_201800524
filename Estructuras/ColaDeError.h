@@ -31,6 +31,9 @@ public:
     void enqueue(Error*);
     void dequeue();
     void generarGrafo();
+
+    void eliminar(string);
+    NodoError* obtenerPrimero();
 };
 
 

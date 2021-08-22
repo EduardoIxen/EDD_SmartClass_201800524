@@ -44,7 +44,7 @@ void ReadTareas::readTareas(string path, Tarea *(&matrizTar)[9][30][5], ListaDob
         }
     }
     archivo.close();
-    cout<<"----Tareas cargadas, errores encontrodos: "<<colaDeError->getTamanio()<<"----"<<endl;
+    cout<<"----Tareas cargadas----"<<endl;
 }
 
 bool
@@ -58,15 +58,17 @@ ReadTareas::validarDatos(string carnet, string fecha, string hora, string dia, s
 
     if (!existeCarnet){
         descripcion += "*No existe el carnet: " + carnet+"\n";
+        cout<<"----No existe el carnet: "<<carnet<<"----"<<endl;
     }
     if(!fechaValida){
         descripcion += "*Fecha invalida: "+ fecha+ "\n";
+        cout<<"----Fecha invalida: "<<fecha<<"----"<<endl;
     }
     if(!encabezadoValido){
         descripcion += "*Verificar que el dia, mes y hora esten dentro del\n rango establecido. (Dia: "+dia+ ",Mes: "+mes+" ,Hora "+hora+")" "\n";
+        cout<<"----Verificar que el dia, mes y hora esten dentro del rango establecido. (Dia: "+dia+ ",Mes: "+mes+" ,Hora "+hora+")"<<"----"<<endl;
     }
 
-    cout << "ERROR// TAREA CON DATOS INCORRECTOS" << endl;
     Error* nuevoError = new Error();
     nuevoError->setId(0);
     nuevoError->setTipo("Tarea");

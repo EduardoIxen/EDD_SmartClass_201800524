@@ -38,7 +38,7 @@ void ReadCsv::readEstudiantes(string _path, ListaDobleEstud *&listaDobleEst, Col
         listaDobleEst->insertar(nuevoEstudiante);
     }
     archivo.close();
-    cout<<"----Estudiantes cargados, errores encontrodos: "<<colaDeError->getTamanio()<<"----"<<endl;
+    cout<<"----Estudiantes cargados----"<<endl;
 }
 
 void ReadCsv::validarDatos(string carnet, string dpi, string correo, ColaDeError*& colaDeError, int numeroLinea) {
@@ -61,7 +61,7 @@ void ReadCsv::validarDatos(string carnet, string dpi, string correo, ColaDeError
     }
 
     if (!regex_match(correo, regex("([a-z]+)([_.a-z0-9]*)([a-z0-9]+)(@)([a-z]+)((.com)|(.es)|(.org))"))) {
-        cout << "--Correo invalido--";
+        cout << "--Correo invalido--"<<endl;
         descripcion += "*Correo invalido: " + correo +"\n";
         correoValido = false;
     }

@@ -94,6 +94,12 @@
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CTarea.h">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.cpp">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
+		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.h">
+			<Option target="EDD_SmartClass_201800524"/>
+		</Unit>
 		<Unit filename="C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ColaDeError.cpp">
 			<Option target="EDD_SmartClass_201800524"/>
 		</Unit>

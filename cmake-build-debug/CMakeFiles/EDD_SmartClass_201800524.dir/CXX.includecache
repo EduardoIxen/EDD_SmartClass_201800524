@@ -6,9 +6,19 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.cpp
-LinealizarMatriz.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.cpp
+Salida.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.h
+../Estructuras/ListaDobleEstud.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
+../Estructuras/LinealizarMatriz.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.h
+string
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/string
+iostream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/iostream
 
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.h
 iostream
@@ -22,6 +32,24 @@ chrono
 NodoMatrizL.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoMatrizL.h
 
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.h
+iostream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/iostream
+sstream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/sstream
+fstream
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/fstream
+chrono
+-
+NodoEstudiante.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h
+../Objetos/Estudiante.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoEstudiante.h
+../Objetos/Estudiante.h
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
+
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/NodoMatrizL.h
 stdlib.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/stdlib.h
@@ -29,6 +57,10 @@ C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/stdlib.h
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Tarea.h
 
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/EnumEstado.h
+
+C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Estudiante.h
+iostream
+-
 
 C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Objetos/Fecha.h
 iostream

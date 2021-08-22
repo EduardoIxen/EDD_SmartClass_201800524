@@ -50,6 +50,10 @@ void ColaDeError::enqueue(Error *error) {
 
 }
 
+NodoError* ColaDeError::obtenerPrimero(){
+    return this->primero;
+}
+
 void ColaDeError::dequeue() {
     if (getPrimero() == NULL){
         cout<<"--------COLA DE ERRORES VACIA--------"<<endl;
@@ -99,7 +103,7 @@ void ColaDeError::generarGrafo() {
         cout<<"Error al abrit el archivo"<<filename<<endl;
     }else{
         file_out << acum << endl;
-        cout << "La escritura fue un exito."<< endl;
+        cout << "----COLA DE ERROR CREADA CORRECTAMENTE----"<< endl;
     }
     string cmd = "dot -T svg ../Reportes/ColaError"+nombreArch+".dot -o ../Reportes/ColaError"+nombreArch+".svg";
     system(cmd.c_str());
@@ -115,7 +119,6 @@ string ColaDeError::obtenerFechaHora(){
     time_t rawtime;
     struct tm * timeContext;
 
-    string temp;
     stringstream textStream;
 
     time(&rawtime);
@@ -123,6 +126,23 @@ string ColaDeError::obtenerFechaHora(){
     timeContext = localtime(&rawtime);
 
     textStream << asctime(timeContext);
-    temp = textStream.str();
-    return temp;
+
+    string seg = to_string(timeContext->tm_sec);
+    string min = to_string(timeContext->tm_min);
+    string hor = to_string(timeContext->tm_hour);
+
+    return hor+"_"+min+"_"+seg;
+}
+
+void ColaDeError::eliminar(string tipo){
+    NodoError* aux = getPrimero();
+
+    while (aux != getUltimo()){
+        if (aux->getError()->getTipo() == tipo){
+            if (aux == getPrimero()){
+                setPrimero(aux->getSiguiente());
+            }
+        }
+        aux = aux->getSiguiente();
+    }
 }

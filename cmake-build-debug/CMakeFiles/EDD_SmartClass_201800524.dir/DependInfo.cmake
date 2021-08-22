@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CEstudiante.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj"
   "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/CTarea.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.obj"
+  "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Controladores/Salida.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/Salida.cpp.obj"
   "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ColaDeError.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.obj"
   "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/LinealizarMatriz.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj"
   "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/Estructuras/ListaDobleEstud.cpp" "C:/Users/tomas/CLionProjects/EDD_SmartClass_201800524/cmake-build-debug/CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj"

@@ -176,6 +176,30 @@ Controladores/CTarea.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.s
 .PHONY : Controladores/CTarea.cpp.s
 
+Controladores/Salida.obj: Controladores/Salida.cpp.obj
+.PHONY : Controladores/Salida.obj
+
+# target to build an object file
+Controladores/Salida.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/Salida.cpp.obj
+.PHONY : Controladores/Salida.cpp.obj
+
+Controladores/Salida.i: Controladores/Salida.cpp.i
+.PHONY : Controladores/Salida.i
+
+# target to preprocess a source file
+Controladores/Salida.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/Salida.cpp.i
+.PHONY : Controladores/Salida.cpp.i
+
+Controladores/Salida.s: Controladores/Salida.cpp.s
+.PHONY : Controladores/Salida.s
+
+# target to generate assembly for a file
+Controladores/Salida.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\EDD_SmartClass_201800524.dir\build.make CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/Salida.cpp.s
+.PHONY : Controladores/Salida.cpp.s
+
 Estructuras/ColaDeError.obj: Estructuras/ColaDeError.cpp.obj
 .PHONY : Estructuras/ColaDeError.obj
 
@@ -527,6 +551,9 @@ help:
 	@echo ... Controladores/CTarea.obj
 	@echo ... Controladores/CTarea.i
 	@echo ... Controladores/CTarea.s
+	@echo ... Controladores/Salida.obj
+	@echo ... Controladores/Salida.i
+	@echo ... Controladores/Salida.s
 	@echo ... Estructuras/ColaDeError.obj
 	@echo ... Estructuras/ColaDeError.i
 	@echo ... Estructuras/ColaDeError.s

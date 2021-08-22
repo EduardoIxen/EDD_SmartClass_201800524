@@ -39,3 +39,7 @@ Fecha::Fecha() {}
 string Fecha::obtenerFecha(string separador) {
     return to_string(getAnio()) + separador + to_string(getMes()) + separador +  to_string(getDia());
 }
+
+string Fecha::obtenerFecha() {
+    return    to_string(getDia())  + "/" + to_string(getMes()) + "/" + to_string(getAnio());
+}

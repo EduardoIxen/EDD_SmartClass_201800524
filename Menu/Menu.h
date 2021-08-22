@@ -14,6 +14,7 @@
 #include "../Estructuras/LinealizarMatriz.h"
 #include "../Controladores/CEstudiante.h"
 #include "../Controladores/CTarea.h"
+#include "../Controladores/Salida.h"
 
 using namespace std;
 class Menu {

@@ -30,6 +30,7 @@ public:
     void setAnio(int anio);
 
     string obtenerFecha(string separador);
+    string obtenerFecha();
 
 };
 

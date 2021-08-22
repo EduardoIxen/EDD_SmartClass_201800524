@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CEstudiante.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/CTarea.cpp.obj"
+  "CMakeFiles/EDD_SmartClass_201800524.dir/Controladores/Salida.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ColaDeError.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/LinealizarMatriz.cpp.obj"
   "CMakeFiles/EDD_SmartClass_201800524.dir/Estructuras/ListaDobleEstud.cpp.obj"
