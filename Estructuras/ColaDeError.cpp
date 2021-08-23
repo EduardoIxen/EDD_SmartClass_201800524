@@ -22,11 +22,11 @@ void ColaDeError::setTamanio(int tamanio) {
     this->tamanio = tamanio;
 }
 
-NodoError* ColaDeError::getPrimero() {
+NodoError *ColaDeError::getPrimero() {
     return this->primero;
 }
 
-NodoError* ColaDeError::getUltimo() {
+NodoError *ColaDeError::getUltimo() {
     return this->ultimo;
 }
 
@@ -35,37 +35,37 @@ int ColaDeError::getTamanio() {
 }
 
 void ColaDeError::enqueue(Error *error) {
-    NodoError* nuevoNodo = new NodoError(error, this->getTamanio()+1);
-    if (getPrimero() == NULL){
+    NodoError *nuevoNodo = new NodoError(error, this->getTamanio() + 1);
+    if (getPrimero() == NULL) {
         setPrimero(nuevoNodo);
         setUltimo(nuevoNodo);
-        setTamanio(getTamanio()+1);
+        setTamanio(getTamanio() + 1);
         nuevoNodo->getError()->setId(this->getTamanio());
-    } else{
+    } else {
         getUltimo()->setSiguiente(nuevoNodo);
         setUltimo(nuevoNodo);
-        setTamanio(getTamanio()+1);
+        setTamanio(getTamanio() + 1);
         nuevoNodo->getError()->setId(this->getTamanio());
     }
 
 }
 
-NodoError* ColaDeError::obtenerPrimero(){
+NodoError *ColaDeError::obtenerPrimero() {
     return this->primero;
 }
 
 void ColaDeError::dequeue() {
-    if (getPrimero() == NULL){
-        cout<<"--------COLA DE ERRORES VACIA--------"<<endl;
+    if (getPrimero() == NULL) {
+        cout << "--------COLA DE ERRORES VACIA--------" << endl;
         return;
     }
     setPrimero(getPrimero()->getSiguiente());
-    setTamanio(getTamanio()-1);
+    setTamanio(getTamanio() - 1);
 }
 
 void ColaDeError::generarGrafo() {
-    if (getTamanio() == 0){
-        cout<<"----LISTA VACIA, NO SE PUEDE GENERAR EL REPORTE----"<<endl;
+    if (getTamanio() == 0) {
+        cout << "----LISTA VACIA, NO SE PUEDE GENERAR EL REPORTE----" << endl;
         return;
     }
 
@@ -74,38 +74,40 @@ void ColaDeError::generarGrafo() {
     string enlace = "";
     string nombreArch = obtenerFechaHora();
 
-    NodoError* aux = getPrimero();
-    nodo += R"("Inicio de la cola" -> ")"+ dirToString(&*getPrimero())+"\" [dir=\"back\"];\n";
-    while (aux != getUltimo()){
+    NodoError *aux = getPrimero();
+    nodo += R"("Inicio de la cola" -> ")" + dirToString(&*getPrimero()) + "\" [dir=\"back\"];\n";
+    while (aux != getUltimo()) {
         string hex = dirToString(&*aux);
-        nodo += "\"" + hex +"\"" + "[label=\" Id: " + to_string(aux->getError()->getId()) + "\n"
-                +"Tipo: " +aux->getError()->getTipo() + "\n"
-                +"Descripcion: "+ aux->getError()->getDescripcion() +"\n"
-                +"\"];\n";
-        enlace += "\""+ dirToString(&*aux) + "\" -> \""+ dirToString(&*(aux->getSiguiente())) + "\" [dir=\"back\"];\n";
+        nodo += "\"" + hex + "\"" + "[label=\" Id: " + to_string(aux->getError()->getId()) + "\n"
+                + "Tipo: " + aux->getError()->getTipo() + "\n"
+                + "Descripcion: " + aux->getError()->getDescripcion() + "\n"
+                + "\"];\n";
+        enlace +=
+                "\"" + dirToString(&*aux) + "\" -> \"" + dirToString(&*(aux->getSiguiente())) + "\" [dir=\"back\"];\n";
         aux = aux->getSiguiente();
     }
 
     string hex = dirToString(&*aux);
-    nodo += "\"" + hex +"\"" + "[label=\" Id: " + to_string(aux->getError()->getId()) + "\n"
-            +"Tipo: " +aux->getError()->getTipo() + "\n"
-            +"Descripcion: "+ aux->getError()->getDescripcion() +"\n"
-            +"\"];\n";
-    enlace += "\""+ dirToString(&*aux) + "\" -> \""+ "Final de la cola" + "\" [dir=\"back\"];\n";
+    nodo += "\"" + hex + "\"" + "[label=\" Id: " + to_string(aux->getError()->getId()) + "\n"
+            + "Tipo: " + aux->getError()->getTipo() + "\n"
+            + "Descripcion: " + aux->getError()->getDescripcion() + "\n"
+            + "\"];\n";
+    enlace += "\"" + dirToString(&*aux) + "\" -> \"" + "Final de la cola" + "\" [dir=\"back\"];\n";
 
     acum += nodo + enlace + "\n}\n";
 
-    string filename("../Reportes/ColaError"+nombreArch+".dot");
+    string filename("../Reportes/ColaError" + nombreArch + ".dot");
     fstream file_out;
 
     file_out.open(filename, std::ios_base::out);
-    if (!file_out.is_open()){
-        cout<<"Error al abrit el archivo"<<filename<<endl;
-    }else{
+    if (!file_out.is_open()) {
+        cout << "Error al abrit el archivo" << filename << endl;
+    } else {
         file_out << acum << endl;
-        cout << "----COLA DE ERROR CREADA CORRECTAMENTE----"<< endl;
+        cout << "----COLA DE ERROR CREADA CORRECTAMENTE----" << endl;
     }
-    string cmd = "dot -T svg ../Reportes/ColaError"+nombreArch+".dot -o ../Reportes/ColaError"+nombreArch+".svg";
+    string cmd =
+            "dot -T svg ../Reportes/ColaError" + nombreArch + ".dot -o ../Reportes/ColaError" + nombreArch + ".svg";
     system(cmd.c_str());
 }
 
@@ -115,9 +117,9 @@ string ColaDeError::dirToString(NodoError *valor) {
     return ss.str();
 }
 
-string ColaDeError::obtenerFechaHora(){
+string ColaDeError::obtenerFechaHora() {
     time_t rawtime;
-    struct tm * timeContext;
+    struct tm *timeContext;
 
     stringstream textStream;
 
@@ -131,22 +133,22 @@ string ColaDeError::obtenerFechaHora(){
     string min = to_string(timeContext->tm_min);
     string hor = to_string(timeContext->tm_hour);
 
-    return hor+"_"+min+"_"+seg;
+    return hor + "_" + min + "_" + seg;
 }
 
-void ColaDeError::eliminar(string tipo){
-    NodoError* aux = getPrimero();
-    ColaDeError* temp = new ColaDeError();
+void ColaDeError::eliminar(string tipo) {
+    NodoError *aux = getPrimero();
+    ColaDeError *temp = new ColaDeError();
 
-    while (aux != getUltimo()){
-        cout<<"Llego "<<aux->getId()<<endl;
-        if (aux->getError()->getTipo() != tipo){
-            cout<<aux->getError()->getTipo()<<" encontrado"<<endl;
+    while (aux != getUltimo()) {
+        cout << "Llego " << aux->getId() << endl;
+        if (aux->getError()->getTipo() != tipo) {
+            cout << aux->getError()->getTipo() << " encontrado" << endl;
             temp->enqueue(aux->getError());
         }
         aux = aux->getSiguiente();
     }
-    if (aux->getError()->getTipo() != tipo){
+    if (aux->getError()->getTipo() != tipo) {
         temp->enqueue(aux->getError());
     }
     this->setPrimero(temp->getPrimero());

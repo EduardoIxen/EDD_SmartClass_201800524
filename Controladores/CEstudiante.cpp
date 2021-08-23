@@ -5,6 +5,11 @@
 #include "CEstudiante.h"
 
 void CEstudiante::agregarEstudiante(ListaDobleEstud *&lista) {
+    /*
+     * Agregar un estudiante a la lista circular doblemente enlazada de forma manual,
+     * solicitándole uno a uno los datos que se necesitan para crear el objeto.
+     *
+     * */
     auto *nuevoEst = new Estudiante();
     string carnet, edad, creditos, nombre, carrera, correo, pass, dpi;
     do {
@@ -52,10 +57,14 @@ void CEstudiante::agregarEstudiante(ListaDobleEstud *&lista) {
     nuevoEst->setCreditos(stoi(creditos));
     nuevoEst->setEdad(stoi(edad));
     lista->insertar(nuevoEst);
-    cout<<"----Estudiante: "<<nombre << " ("<<carnet<<") "<<"agregado correctamente----"<<endl;
+    cout << "----Estudiante: " << nombre << " (" << carnet << ") " << "agregado correctamente----" << endl;
 }
 
 void CEstudiante::modificarEstudiante(ListaDobleEstud *&lista, string dpi) {
+    /*
+     * Buscar al estudiante por medio del dpi en la lista doblemente enlazada
+     * y asi obtener el nodo que lo contiene para luego modificarlo en cambioDeDatos();
+     * */
     if (!verificarNumero(dpi)) {
         cout << "----DPI INVALIDO----" << endl;
         return;
@@ -184,6 +193,10 @@ bool CEstudiante::verificarNumero(string numero) {
 }
 
 void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
+    /*
+     * Modifica los datos del nodo recibido, solicitándole al usuario
+     * uno a uno los datos para cambiarlos.
+     * */
     string opcion = "";
     string carnet, edad, creditos, nombre, carrera, correo, pass, dpi;
     int opConv = 0;
@@ -210,7 +223,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     cin.ignore();
                 } while (!validarCarnet(carnet));
                 nodo->getEstudiante()->setCarnet(stoi(carnet));
-                cout<<"----Carnet modificado correctamente---- "<<endl;
+                cout << "----Carnet modificado correctamente---- " << endl;
                 break;
             case 2:
                 cout << "Dato actual: " << nodo->getEstudiante()->getDpi() << endl;
@@ -220,7 +233,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     cin.ignore(); //limpiar buffer de datos
                 } while (!validarDpi(dpi) && !dpi.empty());
                 nodo->getEstudiante()->setDpi(stoll(dpi, nullptr, 10));
-                cout<<"----Dpi modificado correctamente---- "<<endl;
+                cout << "----Dpi modificado correctamente---- " << endl;
                 break;
             case 3:
                 cout << "Dato actual: " << nodo->getEstudiante()->getNombre() << endl;
@@ -229,7 +242,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     getline(cin, nombre);
                 } while (nombre.empty());
                 nodo->getEstudiante()->setNombre(nombre);
-                cout<<"----Nombre modificado correctamente---- "<<endl;
+                cout << "----Nombre modificado correctamente---- " << endl;
                 break;
             case 4:
                 cout << "Dato actual: " << nodo->getEstudiante()->getCarrera() << endl;
@@ -238,7 +251,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     getline(cin, carrera);
                 } while (carrera.empty());
                 nodo->getEstudiante()->setCarrera(carrera);
-                cout<<"----Carrera modificada correctamente---- "<<endl;
+                cout << "----Carrera modificada correctamente---- " << endl;
                 break;
             case 5:
                 cout << "Dato actual: " << nodo->getEstudiante()->getCorreo() << endl;
@@ -247,7 +260,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     getline(cin, correo);
                 } while (!validarCorreo(correo));
                 nodo->getEstudiante()->setCorreo(correo);
-                cout<<"----Correo modificado correctamente---- "<<endl;
+                cout << "----Correo modificado correctamente---- " << endl;
                 break;
             case 6:
                 cout << "Dato actual: " << nodo->getEstudiante()->getPass() << endl;
@@ -257,7 +270,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     cin.ignore();
                 } while (pass.empty());
                 nodo->getEstudiante()->setPass(pass);
-                cout<<"----Contrasenia modificada correctamente---- "<<endl;
+                cout << "----Contrasenia modificada correctamente---- " << endl;
                 break;
             case 7:
                 do {
@@ -266,7 +279,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     cin.ignore();
                 } while (!verificarNumero(creditos));
                 nodo->getEstudiante()->setCreditos(stoi(creditos));
-                cout<<"----Creditos modificado correctamente---- "<<endl;
+                cout << "----Creditos modificado correctamente---- " << endl;
                 break;
             case 8:
                 do {
@@ -274,7 +287,7 @@ void CEstudiante::cambioDeDatos(NodoEstudiante *&nodo) {
                     getline(cin, edad);
                 } while (!verificarNumero(edad));
                 nodo->getEstudiante()->setEdad(stoi(edad));
-                cout<<"----Edad modificada correctamente---- "<<endl;
+                cout << "----Edad modificada correctamente---- " << endl;
                 break;
             case 9:
                 break;

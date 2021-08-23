@@ -34,6 +34,8 @@ private:
 
     void menuIngresoManual();
     void menuReportes();
+    void menuCargarEstudiantes();
+    void menuCargarTareas();
     bool validarBusqueda(string, string, string);
 public:
     Menu();

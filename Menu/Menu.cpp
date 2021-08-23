@@ -28,52 +28,9 @@ void Menu::menuPrincipal() {
         cin >> opcion;
         cin.ignore();
         if (opcion == "1") {
-            cout << "**************** CARGA DE ESTUDIANTES ****************" << endl;
-            cout << "Ingrese la ruta del archivo." << endl;
-            cout << ">>";
-            getline(cin, path);
-            listaEstudiantes = new ListaDobleEstud();
-            nuevaCola = new ColaDeError();
-            if (matrizLinealizada->getTamanio() > 0) {
-                matrizLinealizada = new LinealizarMatriz();
-                cout << "----TAREAS ELIMINADAS, VUELVA A CARGARLAS PARA VALIDAR A LOS ESTUDIANTES----" << endl;
-            }
-            cargarEstudiantes.readEstudiantes(path, listaEstudiantes, nuevaCola);
+            menuCargarEstudiantes();
         } else if (opcion == "2") {
-            if (listaEstudiantes->getTamanio() > 0) {
-                if(nuevaCola->getTamanio() > 0){
-                    cout<<"aa"<<endl;
-                    nuevaCola->eliminar("Tarea");
-                }
-                cout << "****************** CARGA DE TAREAS ******************" << endl;
-                cout << "Ingrese la ruta del archivo." << endl;
-                cout << ">>";
-                getline(cin, path);
-                for (int i = 0; i < 9; ++i) {
-                    for (int j = 0; j < 30; ++j) {
-                        for (int k = 0; k < 5; ++k) {
-                            matrizTareas[i][j][k] = nullptr;
-                        }
-                    }
-                }
-                cargarTareas.readTareas(path, matrizTareas, listaEstudiantes, nuevaCola);
-                for (int i = 0; i < 9; ++i) {
-                    for (int j = 0; j < 30; ++j) {
-                        for (int k = 0; k < 5; ++k) {
-                            //i = horas j=dias k = meses   formula row major ( i * TamColum + j ) * TamProf + k
-                            int id = (i * 30 + j) * 5 + k;
-                            if (matrizTareas[i][j][k] != NULL) {
-                                matrizLinealizada->insertar(matrizTareas[i][j][k], id);
-                            } else {
-                                matrizLinealizada->insertar(NULL, id);
-                            }
-                        }
-                    }
-                }
-            } else {
-                cout << "ERROR// PARA CARGAR TAREAS PRIMERO AGREGUE ESTUDIANTES" << endl;
-            }
-
+            menuCargarTareas();
         } else if (opcion == "3") {
             menuIngresoManual();
         } else if (opcion == "4") {
@@ -242,6 +199,58 @@ void Menu::menuReportes() {
             cout << "ERROR// OPCION INVALIDA" << endl;
         }
     } while (opcionSubmenu != "7");
+}
+
+void Menu::menuCargarEstudiantes() {
+    string path;
+    cout << "**************** CARGA DE ESTUDIANTES ****************" << endl;
+    cout << "Ingrese la ruta del archivo." << endl;
+    cout << ">>";
+    getline(cin, path);
+    listaEstudiantes = new ListaDobleEstud();
+    nuevaCola = new ColaDeError();
+    if (matrizLinealizada->getTamanio() > 0) {
+        matrizLinealizada = new LinealizarMatriz();
+        cout << "----TAREAS ELIMINADAS, VUELVA A CARGARLAS PARA VALIDAR A LOS ESTUDIANTES----" << endl;
+    }
+    cargarEstudiantes.readEstudiantes(path, listaEstudiantes, nuevaCola);
+}
+
+void Menu::menuCargarTareas() {
+    string path;
+    if (listaEstudiantes->getTamanio() > 0) {
+        if (nuevaCola->getTamanio() > 0) {
+            cout << "aa" << endl;
+            nuevaCola->eliminar("Tarea");
+        }
+        cout << "****************** CARGA DE TAREAS ******************" << endl;
+        cout << "Ingrese la ruta del archivo." << endl;
+        cout << ">>";
+        getline(cin, path);
+        for (int i = 0; i < 9; ++i) {
+            for (int j = 0; j < 30; ++j) {
+                for (int k = 0; k < 5; ++k) {
+                    matrizTareas[i][j][k] = nullptr;
+                }
+            }
+        }
+        cargarTareas.readTareas(path, matrizTareas, listaEstudiantes, nuevaCola);
+        for (int i = 0; i < 9; ++i) {
+            for (int j = 0; j < 30; ++j) {
+                for (int k = 0; k < 5; ++k) {
+                    //i = horas j=dias k = meses   formula row major ( i * TamColum + j ) * TamProf + k
+                    int id = (i * 30 + j) * 5 + k;
+                    if (matrizTareas[i][j][k] != NULL) {
+                        matrizLinealizada->insertar(matrizTareas[i][j][k], id);
+                    } else {
+                        matrizLinealizada->insertar(NULL, id);
+                    }
+                }
+            }
+        }
+    } else {
+        cout << "ERROR// PARA CARGAR TAREAS PRIMERO AGREGUE ESTUDIANTES" << endl;
+    }
 }
 
 bool Menu::validarBusqueda(string dia, string mes, string hora) {

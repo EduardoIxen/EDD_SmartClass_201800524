@@ -4,6 +4,7 @@
 
 #ifndef EDD_SMARTCLASS_201800524_COLADEERROR_H
 #define EDD_SMARTCLASS_201800524_COLADEERROR_H
+
 #include <sstream>
 #include "fstream"
 #include "iostream"
@@ -13,27 +14,38 @@
 
 class ColaDeError {
 private:
-    NodoError* primero;
-    NodoError* ultimo;
+    NodoError *primero;
+    NodoError *ultimo;
     int tamanio;
-    string dirToString(NodoError*);
+
+    string dirToString(NodoError *);
+
     string obtenerFechaHora();
+
 public:
     ColaDeError();
-    void setPrimero(NodoError*);
-    void setUltimo(NodoError*);
+
+    void setPrimero(NodoError *);
+
+    void setUltimo(NodoError *);
+
     void setTamanio(int);
 
-    NodoError* getPrimero();
-    NodoError* getUltimo();
+    NodoError *getPrimero();
+
+    NodoError *getUltimo();
+
     int getTamanio();
 
-    void enqueue(Error*);
+    void enqueue(Error *);
+
     void dequeue();
+
     void generarGrafo();
 
     void eliminar(string);
-    NodoError* obtenerPrimero();
+
+    NodoError *obtenerPrimero();
 };
 
 
