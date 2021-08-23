@@ -136,13 +136,20 @@ string ColaDeError::obtenerFechaHora(){
 
 void ColaDeError::eliminar(string tipo){
     NodoError* aux = getPrimero();
+    ColaDeError* temp = new ColaDeError();
 
     while (aux != getUltimo()){
-        if (aux->getError()->getTipo() == tipo){
-            if (aux == getPrimero()){
-                setPrimero(aux->getSiguiente());
-            }
+        cout<<"Llego "<<aux->getId()<<endl;
+        if (aux->getError()->getTipo() != tipo){
+            cout<<aux->getError()->getTipo()<<" encontrado"<<endl;
+            temp->enqueue(aux->getError());
         }
         aux = aux->getSiguiente();
     }
+    if (aux->getError()->getTipo() != tipo){
+        temp->enqueue(aux->getError());
+    }
+    this->setPrimero(temp->getPrimero());
+    this->setUltimo(temp->getUltimo());
+    this->setTamanio(temp->getTamanio());
 }

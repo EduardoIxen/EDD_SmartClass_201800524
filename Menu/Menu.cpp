@@ -41,6 +41,10 @@ void Menu::menuPrincipal() {
             cargarEstudiantes.readEstudiantes(path, listaEstudiantes, nuevaCola);
         } else if (opcion == "2") {
             if (listaEstudiantes->getTamanio() > 0) {
+                if(nuevaCola->getTamanio() > 0){
+                    cout<<"aa"<<endl;
+                    nuevaCola->eliminar("Tarea");
+                }
                 cout << "****************** CARGA DE TAREAS ******************" << endl;
                 cout << "Ingrese la ruta del archivo." << endl;
                 cout << ">>";
@@ -225,8 +229,12 @@ void Menu::menuReportes() {
         } else if (opcionSubmenu == "5") {
             nuevaCola->generarGrafo();
         } else if (opcionSubmenu == "6") {
-            Salida nuevaSalida;
-            nuevaSalida.generarTxt(listaEstudiantes, matrizLinealizada);
+            if (nuevaCola->getTamanio() == 0) {
+                Salida nuevaSalida;
+                nuevaSalida.generarTxt(listaEstudiantes, matrizLinealizada);
+            } else {
+                cout << "----ERROR// NO SE PUEDE GENERAR EL REPORTE POR ERRORES ALMACENADOS EN LA COLA----" << endl;
+            }
         } else if (opcionSubmenu == "7") {
             cout << "<- Regreso" << endl;
         } else {

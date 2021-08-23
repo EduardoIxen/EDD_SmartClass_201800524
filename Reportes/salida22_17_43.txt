@@ -89,15 +89,6 @@
 		¿item Creditos = 117 $?
 		¿item Edad = 20 $?
 	¿$element? 
-	¿element type="user"?
-		¿item Carnet = 201800566 $?
-		¿item DPI = "2222111122334" $?
-		¿item Nombre = "eduardo rucuch" $?
-		¿item Carrera = "ciencias y sistemsa" $?
-		¿item Password = "asdfasdf" $?
-		¿item Creditos = 12 $?
-		¿item Edad = 21 $?
-	¿$element? 
 	¿element type="task"?
 		¿item Carnet = 201901425 $?
 		¿item Nombre = "Tarea de Matematica" $?
@@ -123,15 +114,6 @@
 		¿item Materia = "Estadística 1" $?
 		¿item Fecha = "21/10/2021" $?
 		¿item Hora = "8:00" $?
-		¿item Estado = "Pendiente" $?
-	¿$element? 
-	¿element type="task"?
-		¿item Carnet = 201800524 $?
-		¿item Nombre = "tareaaaaaa 1" $?
-		¿item Descripcion = "tarea larga" $?
-		¿item Materia = "materia desconocida" $?
-		¿item Fecha = "22/11/2021" $?
-		¿item Hora = "9:00" $?
 		¿item Estado = "Pendiente" $?
 	¿$element? 
 	¿element type="task"?
