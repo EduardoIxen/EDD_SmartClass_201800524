@@ -4,17 +4,22 @@
 
 #include "CTarea.h"
 
-void CTarea::agregarTarea(LinealizarMatriz *& listaTareas) {
+void CTarea::agregarTarea(LinealizarMatriz *& listaTareas, ListaDobleEstud*& listaEstud) {
     auto* nuevaTarea = new Tarea();
     string carnet, nombre, descripcion, materia, fecha, hora, estado;
     Estado nuevoEstado = Estado::INEXISTENTE;
     bool estadoAceptado = false;
+    bool existeCarnet = false;
 
     do {
         cout << "############# INGRESE EL CARNET DEL ESTUDIANTE #############" << endl;
         cin >> carnet;
         cin.ignore(); //limpiar el buffer de datos
-    } while (!verificarCarnet(carnet));
+        existeCarnet = listaEstud->buscarEstudiante(carnet);
+        if(!existeCarnet){
+            cout<<"ERROR// NO EXISTE EL NUMERO DE CARNET EL LA LISTA DE ESTUDIANTES"<<endl;
+        }
+    } while (!verificarCarnet(carnet) || !existeCarnet);
     do {
         cout << "################ INGRESE EL NOMBRE DE LA TAREA ##############" << endl;
         getline(cin, nombre);
@@ -76,13 +81,13 @@ void CTarea::agregarTarea(LinealizarMatriz *& listaTareas) {
 
 }
 
-void CTarea::modificarTarea(LinealizarMatriz *& listaTareas, int indice) {
+void CTarea::modificarTarea(LinealizarMatriz *& listaTareas, int indice, ListaDobleEstud*& listaEstud) {
     auto* aux = listaTareas->getPrimero();
 
     while (aux != NULL){ //dejar el ciclo cuando llegue al final con sig = null
         if (aux->getId() == indice){
             if (aux->getTarea() != NULL){
-                cambioDeDatos(*&aux, listaTareas);
+                cambioDeDatos(*&aux, listaTareas, listaEstud);
                 return;
             } else{
                 cout<<"----NO SE ENCUENTRAN TAREAS EN LA POSICION INGRESADA----"<<endl;
@@ -149,7 +154,7 @@ bool CTarea::verificarNumero(string numero) {
             return false;
         }
     }
-    cout << "----Numero aceptado.----" << endl;
+    //cout << "----Numero aceptado.----" << endl;
     return true;
 }
 
@@ -210,7 +215,7 @@ int CTarea::obtenerPosicionNodo(string fecha, int hora) {
     return posicion;
 }
 
-void CTarea::cambioDeDatos(NodoMatrizL *& nodo, LinealizarMatriz*& listaTareas) {
+void CTarea::cambioDeDatos(NodoMatrizL *& nodo, LinealizarMatriz*& listaTareas, ListaDobleEstud*& listaEstud) {
     int opcion = 0;
     string op = "";
     string carnet, nombre, descripcion, materia, fecha, hora;
@@ -218,6 +223,7 @@ void CTarea::cambioDeDatos(NodoMatrizL *& nodo, LinealizarMatriz*& listaTareas) 
     Estado nuevoEstado = Estado::INEXISTENTE;
     Fecha* fechaTemp;
     int horaTemp = 0;
+    bool nuevoCarnet = false;
 
     do {
         cout << "MENU MODIFICACION:" << endl;
@@ -240,7 +246,12 @@ void CTarea::cambioDeDatos(NodoMatrizL *& nodo, LinealizarMatriz*& listaTareas) 
                     cout << "############# INGRESE EL NUEVO CARNET #############" << endl;
                     cin >> carnet;
                     cin.ignore();
-                } while (!verificarCarnet(carnet));
+                    if(listaEstud->buscarEstudiante(carnet)){
+                        nuevoCarnet = true;
+                    }else{
+                        cout<<"ERROR// El carnet ingresado no existe en la lista de estudiantes."<<endl;
+                    }
+                } while (!verificarCarnet(carnet) || !nuevoCarnet);
                 nodo->getTarea()->setCarnet(stoi(carnet));
                 break;
             case 2:

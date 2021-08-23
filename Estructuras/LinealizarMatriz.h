@@ -33,6 +33,8 @@ public:
     NodoMatrizL* getPrimero();
     NodoMatrizL* getUltimo();
     int getTamanio();
+
+    ~LinealizarMatriz();
 };
 
 

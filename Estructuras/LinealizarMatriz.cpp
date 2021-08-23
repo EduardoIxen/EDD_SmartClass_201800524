@@ -207,3 +207,5 @@ string LinealizarMatriz::obtenerFechaHora(){
 
     return hor+"_"+min+"_"+seg;
 }
+
+LinealizarMatriz::~LinealizarMatriz() = default;

@@ -34,36 +34,42 @@ void Menu::menuPrincipal() {
             getline(cin, path);
             listaEstudiantes = new ListaDobleEstud();
             nuevaCola = new ColaDeError();
+            if (matrizLinealizada->getTamanio() > 0) {
+                matrizLinealizada = new LinealizarMatriz();
+                cout << "----TAREAS ELIMINADAS, VUELVA A CARGARLAS PARA VALIDAR A LOS ESTUDIANTES----" << endl;
+            }
             cargarEstudiantes.readEstudiantes(path, listaEstudiantes, nuevaCola);
         } else if (opcion == "2") {
-            cout << "****************** CARGA DE TAREAS ******************" << endl;
-            cout << "Ingrese la ruta del archivo." << endl;
-            cout << ">>";
-            getline(cin, path);
-            for (int i = 0; i < 9; ++i) {
-                for (int j = 0; j < 30; ++j) {
-                    for (int k = 0; k < 5; ++k) {
-                        matrizTareas[i][j][k] = nullptr;
-                    }
-                }
-            }
-            matrizLinealizada = new LinealizarMatriz();
-            cargarTareas.readTareas(path, matrizTareas, listaEstudiantes, nuevaCola);
-            for (int i = 0; i < 9; ++i) {
-                for (int j = 0; j < 30; ++j) {
-                    for (int k = 0; k < 5; ++k) {
-                        //i = horas j=dias k = meses   formula row major ( i * TamColum + j ) * TamProf + k
-                        int id = (i * 30 + j) * 5 + k;
-                        if (matrizTareas[i][j][k] != NULL) {
-                            matrizLinealizada->insertar(matrizTareas[i][j][k], id);
-                        } else {
-                            matrizLinealizada->insertar(NULL, id);
+            if (listaEstudiantes->getTamanio() > 0) {
+                cout << "****************** CARGA DE TAREAS ******************" << endl;
+                cout << "Ingrese la ruta del archivo." << endl;
+                cout << ">>";
+                getline(cin, path);
+                for (int i = 0; i < 9; ++i) {
+                    for (int j = 0; j < 30; ++j) {
+                        for (int k = 0; k < 5; ++k) {
+                            matrizTareas[i][j][k] = nullptr;
                         }
                     }
                 }
+                cargarTareas.readTareas(path, matrizTareas, listaEstudiantes, nuevaCola);
+                for (int i = 0; i < 9; ++i) {
+                    for (int j = 0; j < 30; ++j) {
+                        for (int k = 0; k < 5; ++k) {
+                            //i = horas j=dias k = meses   formula row major ( i * TamColum + j ) * TamProf + k
+                            int id = (i * 30 + j) * 5 + k;
+                            if (matrizTareas[i][j][k] != NULL) {
+                                matrizLinealizada->insertar(matrizTareas[i][j][k], id);
+                            } else {
+                                matrizLinealizada->insertar(NULL, id);
+                            }
+                        }
+                    }
+                }
+            } else {
+                cout << "ERROR// PARA CARGAR TAREAS PRIMERO AGREGUE ESTUDIANTES" << endl;
             }
-            //matrizLinealizada->generarGrafo();
-            //nuevaCola->generarGrafo();
+
         } else if (opcion == "3") {
             menuIngresoManual();
         } else if (opcion == "4") {
@@ -129,14 +135,14 @@ void Menu::menuIngresoManual() {
                 cin >> opcionSubmenu;
                 if (opcionSubmenu == "1") {
                     cout << "******************* AGREGAR TAREA ********************" << endl;
-                    controladorTarea.agregarTarea(matrizLinealizada);
+                    controladorTarea.agregarTarea(matrizLinealizada, listaEstudiantes);
                 } else if (opcionSubmenu == "2") {
                     string indice = "";
                     cout << "******************* MODIFICAR TAREA ******************" << endl;
                     cout << "Ingrese el indice de la tarea que desea modificar" << endl;
                     cout << ">>";
                     cin >> indice;
-                    controladorTarea.modificarTarea(matrizLinealizada, stoi(indice));
+                    controladorTarea.modificarTarea(matrizLinealizada, stoi(indice), listaEstudiantes);
                 } else if (opcionSubmenu == "3") {
                     string indice = "";
                     cout << "******************* ELIMINAR TAREA *******************" << endl;
@@ -236,6 +242,6 @@ bool Menu::validarBusqueda(string dia, string mes, string hora) {
     int nhora = stoi(hora);
 
     if ((nmes >= 7 && nmes <= 11) && (ndia >= 1 && ndia <= 30) && (nhora >= 8 && nhora <= 16)) return true;
-    cout << "----LOS DATOS INGRESADOS ESTAN FUERA DEL RANGO VALIDO----"<<endl;
+    cout << "----LOS DATOS INGRESADOS ESTAN FUERA DEL RANGO VALIDO----" << endl;
     return false;
 }

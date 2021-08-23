@@ -19,13 +19,13 @@
 using namespace std;
 class Menu {
 private:
-    ListaDobleEstud* listaEstudiantes;
+    ListaDobleEstud* listaEstudiantes = new ListaDobleEstud();
     ReadCsv cargarEstudiantes;
     CEstudiante controladorEstudiante;
 
 
     Tarea* matrizTareas[9][30][5] ;
-    LinealizarMatriz* matrizLinealizada;
+    LinealizarMatriz* matrizLinealizada = new LinealizarMatriz();
     ReadTareas cargarTareas;
     CTarea controladorTarea;
 

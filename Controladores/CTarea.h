@@ -16,11 +16,11 @@ private:
     bool verificarHora(string);
     Fecha* crearFecha(string);
     int obtenerPosicionNodo(string, int);
-    void cambioDeDatos(NodoMatrizL*&, LinealizarMatriz*&);
+    void cambioDeDatos(NodoMatrizL*&, LinealizarMatriz*&, ListaDobleEstud*&);
     string obtenerEstado(Estado);
 public:
-    void agregarTarea(LinealizarMatriz*& );
-    void modificarTarea(LinealizarMatriz*&, int);
+    void agregarTarea(LinealizarMatriz*&, ListaDobleEstud*& );
+    void modificarTarea(LinealizarMatriz*&, int, ListaDobleEstud*&);
     void eliminarTarea(LinealizarMatriz*&, int);
 };
 
