@@ -1,0 +1,9 @@
+/Analyzer/__pycache__/
+/Controller/__pycache__/
+/Analyzer/parser.out
+/Analyzer/parsetab.py
+/Report/
+/data.txt
+*.pyc
+*.dot
+*.svg
