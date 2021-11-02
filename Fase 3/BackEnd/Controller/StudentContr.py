@@ -6,7 +6,7 @@ def create_student(tree_student, req):
     tree_student.insert(Student(req['carnet'], req['DPI'], req['nombre'], req['carrera'], req['correo'], req['password']
                                 , req['creditos'], req['edad'], List_Year()))
 
-    return {"Exito":"Estudiante creado correctamente"}, 201
+    return {"message":"Estudiante creado correctamente"}, 201
 
 
 def modify_student(tree_student, req):

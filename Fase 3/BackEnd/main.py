@@ -1,7 +1,7 @@
 import json
 from Data_Structures.ABB import ABB
 from Analyzer.Parser import parse
-from Controller.LoadData import load_student, load_course
+from Controller.LoadData import load_student, load_course, load_student_frontend
 from Controller.GenerateReport import make_report
 from Controller.StudentContr import create_student, modify_student, delete_student, get_student, login_controller
 from Controller.TaskContr import create_task, modify_task, get_task, delete_task
@@ -26,19 +26,28 @@ def index():
 def loadFile():
     req = request.json
     if request.is_json:
-        f = open(req['path'], "r", encoding="utf-8")
-        content = f.read()
-        f.close()
-        if req['tipo'].lower() == "estudiante":
-            lstValues = parse(content)  # analize content file.txt whith ply and return a list of students and tasks
-            load_student(tree_student, lstValues)
-            return {"Exito":"Archivo de estudiantes y tareas cargado correctamente"}, 201
-        elif req['tipo'].lower() == "curso":
-            content_to_dic = json.loads(content)
-            return load_course(tree_student, content_to_dic)
+        if req['path'] == "":
+            content_to_dic = json.loads(req['contenido'])
+            if req['tipo'] == "estudiante":
+                load_student_frontend(tree_student, content_to_dic)
+                #load_student(tree_student, content_to_dic)
+                return {"message": "Archivo de estudiantes y tareas cargado correctamente"}, 201
+            elif req['tipo'] == "curso":
+                return load_course(tree_student, content_to_dic)
         else:
-            return {"Error":"Tipo incorrecto."}, 400
-    return {"error": "Request must be JSON"}, 415
+            f = open(req['path'], "r", encoding="utf-8")
+            content = f.read()
+            f.close()
+            if req['tipo'].lower() == "estudiante":
+                lstValues = parse(content)  # analize content file.txt whith ply and return a list of students and tasks
+                load_student(tree_student, lstValues)
+                return {"Exito":"Archivo de estudiantes y tareas cargado correctamente"}, 201
+            elif req['tipo'].lower() == "curso":
+                content_to_dic = json.loads(content)
+                return load_course(tree_student, content_to_dic)
+            else:
+                return {"Error":"Tipo incorrecto."}, 400
+    return {"message": "Request must be JSON"}, 415
 
 
 @app.get("/reporte")
@@ -57,7 +66,7 @@ def add_student():
         print("llego", req)
         return create_student(tree_student, req)
     else:
-        return {"error": "Request must be JSON"}, 415
+        return {"message": "Request must be JSON"}, 415
 
 
 @app.put("/estudiante")
@@ -132,7 +141,7 @@ def add_course_pe():
     if request.is_json:
         return add_course_pensum(tree_pensum, req)
     else:
-        return {"error": "Request must be JSON"}, 415
+        return {"message": "Request must be JSON"}, 415
 
 @app.post("/login")
 def login():
