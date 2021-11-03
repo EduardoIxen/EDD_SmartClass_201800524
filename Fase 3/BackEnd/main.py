@@ -7,6 +7,8 @@ from Controller.StudentContr import create_student, modify_student, delete_stude
 from Controller.TaskContr import create_task, modify_task, get_task, delete_task
 from Controller.CourseContr import add_course_student, add_course_pensum
 from Data_Structures.B_Tree.B_Tree import B_Tree
+from Data_Structures.Hash_Table.Hash_Table import Hash_Table
+from Controller.NotesController import loadNotes
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
@@ -14,6 +16,7 @@ from flask_cors import CORS
 
 tree_student = ABB()
 tree_pensum = B_Tree(5)
+table_notes = Hash_Table(7)
 app = Flask(__name__)
 CORS(app)
 
@@ -151,6 +154,14 @@ def login():
         print("contra:",req["password"])
         #return jsonify({'message':'Logeado correctemente'}), 200
         return login_controller(tree_student, req)
+
+@app.post("/loadNotes")
+def loadFileNotes():
+    req = request.json
+    if request.is_json:
+        loadNotes(req["Notes"], table_notes)
+        return {"message":"Ok"}, 200
+    return {"message":"Request must be JSON"}, 415
 
 
 if __name__ == '__main__':
