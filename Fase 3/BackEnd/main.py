@@ -8,7 +8,7 @@ from Controller.TaskContr import create_task, modify_task, get_task, delete_task
 from Controller.CourseContr import add_course_student, add_course_pensum
 from Data_Structures.B_Tree.B_Tree import B_Tree
 from Data_Structures.Hash_Table.Hash_Table import Hash_Table
-from Controller.NotesController import loadNotes
+from Controller.NotesController import loadNotes, newNote, notes_student
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 
@@ -159,9 +159,21 @@ def login():
 def loadFileNotes():
     req = request.json
     if request.is_json:
-        loadNotes(req["Notes"], table_notes)
-        return {"message":"Ok"}, 200
+        return loadNotes(req["contenido"], table_notes)
     return {"message":"Request must be JSON"}, 415
+
+@app.post("/newNote")
+def new_note():
+    req = request.json
+    if request.is_json:
+        return newNote(req, table_notes)
+    return {"message":"Request must be JSON"}, 415
+
+@app.get("/notesStudent/<id_student>")
+def view_notes(id_student):
+    print(id_student)
+    return notes_student(id_student, table_notes)
+
 
 
 if __name__ == '__main__':

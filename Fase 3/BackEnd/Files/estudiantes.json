@@ -1,12 +1,12 @@
 {
     "estudiantes":[
         {
-            "carnet":20210000001,
+            "carnet":201800524,
             "DPI":2097615549301,
-            "nombre":"jorge",
+            "nombre":"Eduardo Tomas",
             "carrera":"ing. ciencias y sistemas",
             "correo":"jorge@gmial.com",
-            "password":"FWfo94",
+            "password":"asd",
             "creditos": 120,
             "edad":26
 

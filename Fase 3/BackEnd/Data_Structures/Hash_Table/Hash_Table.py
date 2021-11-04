@@ -16,6 +16,7 @@ class Hash_Table:
             self.insert(carnet, title, content, key)
         else:
             self.size += 2
+            self.insertHash(carnet, title, content)
 
     def insert(self, carnet, title, content, key):
         new_node = Node(key, carnet, title, content)
